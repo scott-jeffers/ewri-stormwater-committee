@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCE EWRI Stormwater Modeling Committee</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/Icon 3 (1).png">
+    <link rel="apple-touch-icon" href="Images/Icon 3 (1).png">
+    
+    <!-- Tailwind CSS (via CDN for immediate development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 top-0 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo / Brand -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center">
+                        <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-10 mr-2">
+                        <span class="text-xl font-bold text-blue-900 tracking-tight">
+                            ASCE EWRI <span class="text-gray-500 font-normal">Stormwater Modeling Committee</span>
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#projects" class="text-gray-600 hover:text-blue-900 transition font-medium">Projects</a>
+                    <a href="#resources" class="text-gray-600 hover:text-blue-900 transition font-medium">Resources</a>
+                    <a href="#leadership" class="text-gray-600 hover:text-blue-900 transition font-medium">Team</a>
+                    <a href="#join" class="px-4 py-2 rounded-md bg-blue-900 text-white hover:bg-blue-800 transition font-medium">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="Images/Banner 1 (1).png" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-white/40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight drop-shadow-lg">
+                Advancing <span class="text-blue-600">Stormwater Modeling</span> Standards
+            </h1>
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-800 leading-relaxed mb-8 drop-shadow">
+                We bring together industry experts, researchers, and practitioners to address the complex challenges of stormwater management. By defining best practices and fostering innovation, we aim to enhance the reliability and accuracy of stormwater models used worldwide.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
+                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">Collaboration</h3>
+                    <p class="text-gray-700 text-sm">Connecting professionals across the industry.</p>
+                </div>
+                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">Education</h3>
+                    <p class="text-gray-700 text-sm">Publishing guidelines and hosting workshops.</p>
+                </div>
+                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">Innovation</h3>
+                    <p class="text-gray-700 text-sm">Advancing state-of-the-art modeling techniques.</p>
+                </div>
+            </div>
+            <div class="mt-6 flex justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition shadow-lg">
+                    View Our Work
+                </a>
+                <a href="#resources" class="px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:text-lg transition shadow-lg">
+                    Explore Resources
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- PROJECTS / COMMITTEES -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Current Initiatives</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Project Card 1 -->
+                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Modeling Standards</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developing standardized protocols for H&H model review and calibration to ensure consistency across jurisdictions.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Green Infrastructure</h3>
+                    <p class="text-gray-600 mb-4">
+                        Investigating best practices for representing LID and BMPs within continuous simulation models.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Climate Resilience</h3>
+                    <p class="text-gray-600 mb-4">
+                        Updating rainfall distributions and modeling parameters to account for changing climate patterns.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCES SECTION -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Knowledge Hub</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Educational Resources
+                </p>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                    A collection of education resources found throughout the web from various contributors. Reach out to have your content featured and help out.
+                </p>
+            </div>
+
+            <!-- Educational Resources -->
+            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">SWMM & Modeling Resources</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/EPA-swmm.png');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">EPA SWMM Website</p>
+                            <p class="text-sm text-gray-200">epa.gov/water-research/storm-water-management-model-swmm</p>
+                        </div>
+                    </a>
+                    <a href="https://www.openswmm.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/openswmm_.png'); background-color: #1e40af;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">OpenSWMM</p>
+                            <p class="text-sm text-gray-200">openswmm.org</p>
+                        </div>
+                    </a>
+                    <a href="https://www.pyswmm.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/pyswmm.jpg');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">PySWMM</p>
+                            <p class="text-sm text-gray-200">pyswmm.org</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/USEPA/Stormwater-Management-Model" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/github.png'); background-color: #1f2937;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">SWMM GitHub</p>
+                            <p class="text-sm text-gray-200">github.com/USEPA/Stormwater-Management-Model</p>
+                        </div>
+                    </a>
+                    <a href="https://docs.bentley.com/LiveContent/web/Bentley%20SewerGEMS%20SS5-v2/en/GUID-34B7A754-7CE9-4BD6-A93C-F6E1059D9929.html" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/bentley.png');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">Bentley SWMM Pages</p>
+                            <p class="text-sm text-gray-200">Bentley SewerGEMS Documentation</p>
+                        </div>
+                    </a>
+                    <a href="https://mel-meng-pe.medium.com/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/mel.png');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">Mel Meng's Medium Page</p>
+                            <p class="text-sm text-gray-200">mel-meng-pe.medium.com</p>
+                        </div>
+                    </a>
+                    <a href="http://www.dynsystem.com/netstorm/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/netstorm.png');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
+                            <p class="font-bold text-lg mb-1">NetSTORM</p>
+                            <p class="text-sm text-gray-200">dynsystem.com/netstorm</p>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@StormwaterModelingEWRI/playlists?view=1&sort=lad&flow=grid" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-gradient-to-br from-red-600 to-red-800 hover:scale-105 transition-transform duration-300 shadow-md flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20"></div>
+                        <div class="relative text-center text-white p-4">
+                            <i class="fa-brands fa-youtube text-4xl mb-2 block"></i>
+                            <p class="font-bold text-lg">Educational Videos</p>
+                            <p class="text-sm text-gray-200">YouTube Channel - Stormwater Modeling EWRI</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Sources for Modeling -->
+            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Data Sources for Modeling</h3>
+                
+                <!-- Precipitation/Meteorology -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-cloud-rain mr-2"></i>
+                        Precipitation/Meteorology
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
+                        <a href="http://www.dynsystem.com/netstorm/IDFStats.htm" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NetStorm Atlas, IDF statistics</a>
+                        <a href="https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, 1-min/5-min archives</a>
+                        <a href="https://www.ncei.noaa.gov/maps/hourly/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, hourly/15-min archives</a>
+                        <a href="https://www.ncei.noaa.gov/maps/alltimes/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, all duration archives</a>
+                        <a href="https://www.ncei.noaa.gov/access/us-climate-normals/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Climate normals</a>
+                        <a href="https://www.cocorahs.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">CoCoRaHS</a>
+                    </div>
+                </div>
+
+                <!-- Hydrometry/Hydrography -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-water mr-2"></i>
+                        Hydrometry/Hydrography
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
+                        <a href="https://waterdata.usgs.gov/nwis/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Information System</a>
+                        <a href="https://tidesandcurrents.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Tide level archives and forecasts</a>
+                        <a href="https://modelmywatershed.org" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Model my Watershed (non-governmental organization)</a>
+                    </div>
+                </div>
+
+                <!-- Topography -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-mountain mr-2"></i>
+                        Topography
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
+                        <a href="https://apps.nationalmap.gov/lidar-explorer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, LiDAR Explorer</a>
+                        <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
+                    </div>
+                </div>
+
+                <!-- Buildings -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-building mr-2"></i>
+                        Buildings
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://gis-fema.hub.arcgis.com/pages/usa-structures" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">FEMA, National Buildings layer</a>
+                        <a href="https://www.openstreetmap.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">OpenStreetMap (gives roads etc.)</a>
+                    </div>
+                </div>
+
+                <!-- Parameters -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-sliders mr-2"></i>
+                        Parameters
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://www.mrlc.gov/viewer/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">MRLC, Hydrography/Impervious Surface/Tree Canopy/Land Cover</a>
+                        <a href="https://www.ecopiatech.com/resources/news/high-resolution-land-cover-data-from-ecopia-ai-now-publicly-available-through-noaa" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Improved Impervious Layer</a>
+                        <a href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USDA, WebSoil Survey</a>
+                    </div>
+                </div>
+
+                <!-- USA State Specific GIS -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-map mr-2"></i>
+                        USA State Specific GIS
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://www.pasda.psu.edu/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Pennsylvania: PASDA</a>
+                        <a href="https://vgin.vdem.virginia.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Virginia VGIN</a>
+                    </div>
+                </div>
+
+                <!-- DEMs/LIDAR/Aerial Imagery -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-satellite mr-2"></i>
+                        DEMs/LIDAR/Aerial Imagery
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
+                        <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
+                    </div>
+                </div>
+
+                <!-- Watershed Delineation Boundary Tool -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-map-marked-alt mr-2"></i>
+                        Watershed Delineation Boundary Tool
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://streamstats.usgs.gov/ss/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS StreamStats</a>
+                        <a href="https://modelmywatershed.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Stroud Water Research Center</a>
+                    </div>
+                </div>
+
+                <!-- Gage Station Data -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-gauge mr-2"></i>
+                        Gage Station Data
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Rainfall Design Storm Depths -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-cloud-showers-heavy mr-2"></i>
+                        Rainfall Design Storm Depths
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
+                    </div>
+                </div>
+
+                <!-- Historic Extreme Event Data -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-exclamation-triangle mr-2"></i>
+                        Historic Extreme Event Data
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://storms.ngs.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Imagery NOAA</a>
+                        <a href="https://stn.wim.usgs.gov/FEV/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Gage Data/Images USGS</a>
+                    </div>
+                </div>
+
+                <!-- Special Tools -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-tools mr-2"></i>
+                        Special Tools
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
+                        <a href="https://aip.neer.ai/project/cc13e63f-2eae-41b3-a3cc-76bc82edaa66?token=3435f1e5c611e25e" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">New Free Online Mapping Tool! (NEER)</a>
+                        <a href="https://swcweb.epa.gov/stormwatercalculator/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">EPA Stormwater Calculator (SWMM formatted files, rain gauge data, temperature data, land use parameters)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET INVOLVED SECTION -->
+    <section id="join" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Join the Team!</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Reach out to join the team and contribute to the team mission!
+            </p>
+            <a href="mailto:contact@example.com" class="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition">
+                Get Involved
+            </a>
+        </div>
+    </section>
+
+    <!-- TEAM & MEMBERS SECTION -->
+    <section id="leadership" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Committee Leadership -->
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Team</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Committee Leadership
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/erica.jpg" alt="Erica McKenzie" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Erica McKenzie</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Lead Chair</p>
+                    <p class="text-gray-500 text-sm">Ph.D. Associate Professor at Temple University</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/mike.jpg" alt="Mike Gregory" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Mike Gregory</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Vice Chair</p>
+                    <p class="text-gray-500 text-sm">Water Resources Engineer at CHI</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/scott-jeffers.jpg" alt="Scott Jeffers" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Scott Jeffers</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Secretary</p>
+                    <p class="text-gray-500 text-sm">President Anthropocene Engineering</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/dayton.jpg" alt="Dayton Marchese" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Dayton Marchese</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Past Chair</p>
+                    <p class="text-gray-500 text-sm">P.E. Strategic Partnerships Manager at OptiRTC</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/Sample.jpg" alt="David James Sample" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">David James Sample</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Past Chair</p>
+                    <p class="text-gray-500 text-sm">Ph.D., P.E., BC.WRE, M.ASCE Professor at Virginia Tech</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/traver.jpg" alt="Robert Traver" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Robert Traver</h3>
+                    <p class="text-gray-600 font-semibold mb-1">Past-Chair</p>
+                    <p class="text-gray-500 text-sm">Professor at Villanova University</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="Members/shirley.jpg" alt="Shirley Clark" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Shirley Clark</h3>
+                    <p class="text-gray-600 font-semibold mb-1">ASCE | EWRI President</p>
+                    <p class="text-gray-500 text-sm">Professor of Environmental Engineering at Penn State Harrisburg and ASCE-EWRI President</p>
+                </div>
+            </div>
+
+            <!-- Content Contributors -->
+            <div class="mt-16 mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Content Contributors</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
+                        <img src="Members/bob.jpg" alt="Robert (Bob) Dickinson" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
+                        <h4 class="font-bold text-lg text-blue-900 mb-1">Robert (Bob) Dickinson</h4>
+                        <p class="text-gray-600 text-sm">Member</p>
+                        <p class="text-gray-500 text-sm mt-1">Autodesk Water Technologist for Storm Sewer and Flood</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
+                        <img src="Members/mitch.jpg" alt="Mitch Heineman" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
+                        <h4 class="font-bold text-lg text-blue-900 mb-1">Mitch Heineman</h4>
+                        <p class="text-gray-600 text-sm">Member</p>
+                        <p class="text-gray-500 text-sm mt-1">Collection Systems Discipline leader | CDM Smith</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
+                        <img src="Members/bryant.jpg" alt="Bryant McDonnell" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
+                        <h4 class="font-bold text-lg text-blue-900 mb-1">Bryant McDonnell</h4>
+                        <p class="text-gray-600 text-sm">Member</p>
+                        <p class="text-gray-500 text-sm mt-1">Principal and Founder at Hydroinformatics, LLC</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee Members -->
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Community</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Stormwater Modeling Committee Members
+                </p>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                    Join the Team! Reach out to join the team and contribute to the team mission!
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                    <div>David James Sample, Ph.D., P.E., BC.WRE, M.ASCE</div>
+                    <div>Dayton Marchese, P.E.</div>
+                    <div>Elie George Araj, P.E., C.Eng, BC.WRE, M.ASCE</div>
+                    <div>Tom Batroney, P.E., M.ASCE</div>
+                    <div>Azadeh Akhavan Bloorchian-Verschuyl, Ph.D., A.M.ASCE</div>
+                    <div>Angela Marie Brackbill, A.M.ASCE</div>
+                    <div>Robert Walter Carr, P.E., M.ASCE</div>
+                    <div>Daniel Christian, P.E., BC.WRE, M.ASCE</div>
+                    <div>Shirley E Clark, Ph.D., P.E., BC.WRE, F.EWRI, M.ASCE</div>
+                    <div>Robert Edgar Dickinson, Jr, EIT, A.M.ASCE</div>
+                    <div>Thomas Andrew Earles, M.ASCE</div>
+                    <div>Ali Ebrahimian, Ph.D.</div>
+                    <div>Elizabeth Anne Fassman-Beck, Ph.D., M.ASCE</div>
+                    <div>David Fortune</div>
+                    <div>Saki Handa, P.E., ENV SP, M.ASCE</div>
+                    <div>Mitchell Cary Heineman, P.E., BC.WRE, M.ASCE</div>
+                    <div>Ruth Ayn Hocker, P.E., R.Eng, BC.WRE, M.ASCE</div>
+                    <div>Ben R. Hodges</div>
+                    <div>Shawn Huang, Aff.M.ASCE</div>
+                    <div>Scott Jeffers</div>
+                    <div>Stephanie Johnson</div>
+                    <div>Bill Lucas</div>
+                    <div>Erica R. McKenzie</div>
+                    <div>Gary Dean Martens, P.E., M.ASCE</div>
+                    <div>Arash Massoudieh, Aff.M.ASCE</div>
+                    <div>Daniel E Medina, Ph.D., P.E., M.ASCE</div>
+                    <div>Thomas Patrick O'Connor, P.E., F.ASCE</div>
+                    <div>Linda D. Pechacek, P.E., F.EWRI, M.ASCE</div>
+                    <div>Aaron Poresky, P.E.</div>
+                    <div>Marcus Mahan Quigley, P.E., BC.WRE, M.ASCE</div>
+                    <div>Christopher J Ranck, P.E., BCEE, ENV SP, BC.WRE</div>
+                    <div>Robert John Ryan, Ph.D., P.E., BC.WRE, M.ASCE</div>
+                    <div>K. Majid Sadeghi, Ph.D., P.E., BC.WRE, M.ASCE</div>
+                    <div>Aly Salem, S.M.ASCE</div>
+                    <div>Michelle Simon, Ph.D., P.E.</div>
+                    <div>David William Spelman, Ph.D., P.E., M.ASCE</div>
+                    <div>Scott Struck, Ph.D., F.EWRI, M.ASCE</div>
+                    <div>Robert Guy Traver, Ph.D., P.E., BC.WRE, F.EWRI, F.ASCE</div>
+                    <div>Bridget Wadzuk, Ph.D., A.M.ASCE</div>
+                    <div>Thomas Michael Walski, Ph.D., P.E., F.EWRI, F.ASCE</div>
+                    <div>K Zhang</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-12 mb-4 brightness-150 opacity-90">
+                <h4 class="text-xl font-bold mb-4">ASCE EWRI Stormwater Modeling Committee</h4>
+                <p class="text-gray-400">
+                    Environmental & Water Resources Institute<br>
+                    Stormwater Modeling Committee
+                </p>
+            </div>
+            <div class="md:text-right">
+                <p class="text-gray-400 mb-4">Contact Committee Leadership</p>
+                <a href="mailto:contact@example.com" class="text-blue-400 hover:text-blue-300">contact@example.org</a>
+                <div class="mt-4 space-x-4">
+                    <a href="https://www.linkedin.com/in/scott-jeffers-pe-phd-a7638717/" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
