@@ -19,72 +19,195 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        :root {
+            --primary-blue: #0A4A7A;
+            --secondary-blue: #1E6FA8;
+            --accent-blue: #2B8FD9;
+            --dark-gray: #1F2937;
+            --medium-gray: #4B5563;
+            --light-gray: #F3F4F6;
+        }
+        
+        body { 
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+        }
+        
         /* Smooth scrolling for anchor links */
         html { scroll-behavior: smooth; }
+        
+        /* Professional navigation */
+        nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        /* Modern card hover effects */
+        .card-modern {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .card-modern:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: rgba(43, 143, 217, 0.2);
+        }
+        
+        /* Professional gradient backgrounds */
+        .gradient-professional {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-water {
+            background: linear-gradient(135deg, #0A4A7A 0%, #1E6FA8 50%, #2B8FD9 100%);
+        }
+        
+        /* Modern button styles */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Accordion animations */
+        details summary {
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        details .accordion-content {
+            animation: slideDown 0.3s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Professional section dividers */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+            margin: 4rem 0;
+        }
+        
+        /* Modern text shadows */
+        .text-shadow-professional {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Professional icon containers */
+        .icon-container {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(43, 143, 217, 0.1) 0%, rgba(30, 111, 168, 0.1) 100%);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
     <!-- NAVIGATION -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 top-0 border-b border-gray-200">
+    <nav class="bg-white/98 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <!-- Logo / Brand -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex items-center">
-                        <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-10 mr-2">
-                        <span class="text-xl font-bold text-blue-900 tracking-tight">
-                            ASCE EWRI <span class="text-gray-500 font-normal">Stormwater Modeling Committee</span>
-                        </span>
+                    <a href="#" class="flex items-center group">
+                        <div class="relative">
+                            <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-12 mr-3 transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold text-gray-900 tracking-tight block leading-tight">
+                                ASCE EWRI
+                            </span>
+                            <span class="text-sm font-medium text-gray-600 block leading-tight">
+                                Stormwater Modeling Committee
+                            </span>
+                        </div>
                     </a>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#projects" class="text-gray-600 hover:text-blue-900 transition font-medium">Projects</a>
-                    <a href="#resources" class="text-gray-600 hover:text-blue-900 transition font-medium">Resources</a>
-                    <a href="#leadership" class="text-gray-600 hover:text-blue-900 transition font-medium">Team</a>
-                    <a href="#join" class="px-4 py-2 rounded-md bg-blue-900 text-white hover:bg-blue-800 transition font-medium">Get Involved</a>
+                <div class="hidden md:flex space-x-1 items-center">
+                    <a href="#projects" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Projects</a>
+                    <a href="#resources" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Resources</a>
+                    <a href="#meeting-notes" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Meeting Notes</a>
+                    <a href="#conferences" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Conferences</a>
+                    <a href="#leadership" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Team</a>
+                    <a href="#join" class="ml-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-blue-700 to-blue-800 text-white hover:from-blue-800 hover:to-blue-900 transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg">Get Involved</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <header class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
         <div class="absolute inset-0">
             <img src="Images/Banner 1 (1).png" alt="Background" class="w-full h-full object-cover">
         </div>
-        <div class="absolute inset-0 bg-white/40"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight drop-shadow-lg">
-                Advancing <span class="text-blue-600">Stormwater Modeling</span> Standards
-            </h1>
-            <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-800 leading-relaxed mb-8 drop-shadow">
-                We bring together industry experts, researchers, and practitioners to address the complex challenges of stormwater management. By defining best practices and fostering innovation, we aim to enhance the reliability and accuracy of stormwater models used worldwide.
-            </p>
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
-                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
-                    <h3 class="font-bold text-lg text-blue-900 mb-2">Collaboration</h3>
-                    <p class="text-gray-700 text-sm">Connecting professionals across the industry.</p>
+        <div class="absolute inset-0 bg-white/30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 tracking-tight leading-tight drop-shadow-sm">
+                    Advancing <span class="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">Stormwater Modeling</span>
+                </h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-800 leading-relaxed">
+                    We bring together industry experts, researchers, and practitioners to address the complex challenges of stormwater management. By defining best practices and fostering innovation, we aim to enhance the reliability and accuracy of stormwater models used worldwide.
+                </p>
+                
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
+                        <div class="icon-container mx-auto mb-3">
+                            <i class="fa-solid fa-users text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-gray-900 mb-1">Collaboration</h3>
+                        <p class="text-gray-600 text-sm">Connecting professionals across the industry.</p>
+                    </div>
+                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
+                        <div class="icon-container mx-auto mb-3">
+                            <i class="fa-solid fa-graduation-cap text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-gray-900 mb-1">Education</h3>
+                        <p class="text-gray-600 text-sm">Publishing guidelines and hosting workshops.</p>
+                    </div>
+                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
+                        <div class="icon-container mx-auto mb-3">
+                            <i class="fa-solid fa-lightbulb text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="font-bold text-base text-gray-900 mb-1">Innovation</h3>
+                        <p class="text-gray-600 text-sm">Advancing state-of-the-art modeling techniques.</p>
+                    </div>
                 </div>
-                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
-                    <h3 class="font-bold text-lg text-blue-900 mb-2">Education</h3>
-                    <p class="text-gray-700 text-sm">Publishing guidelines and hosting workshops.</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-3">
+                    <a href="#projects" class="px-7 py-3 text-base font-semibold rounded-lg text-white btn-primary">
+                        View Our Work
+                    </a>
+                    <a href="#resources" class="px-7 py-3 border-2 border-gray-300 text-base font-semibold rounded-lg text-gray-700 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 shadow-sm">
+                        Explore Resources
+                    </a>
                 </div>
-                <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 shadow-md">
-                    <h3 class="font-bold text-lg text-blue-900 mb-2">Innovation</h3>
-                    <p class="text-gray-700 text-sm">Advancing state-of-the-art modeling techniques.</p>
-                </div>
-            </div>
-            <div class="mt-6 flex justify-center gap-4">
-                <a href="#projects" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition shadow-lg">
-                    View Our Work
-                </a>
-                <a href="#resources" class="px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:text-lg transition shadow-lg">
-                    Explore Resources
-                </a>
             </div>
         </div>
     </header>
@@ -92,36 +215,80 @@
 
 
     <!-- PROJECTS / COMMITTEES -->
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-14 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12">Current Initiatives</h2>
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">Current Initiatives</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Leading the industry through innovative research and standardized practices</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
                 
                 <!-- Project Card 1 -->
-                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Modeling Standards</h3>
-                    <p class="text-gray-600 mb-4">
-                        Developing standardized protocols for H&H model review and calibration to ensure consistency across jurisdictions.
+                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-container mr-4" style="width:44px;height:44px;">
+                            <i class="fa-solid fa-chalkboard-teacher text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Teaching Tools</h3>
+                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Developing educational resources and interactive tools to support stormwater modeling instruction and training.
                     </p>
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                    <a href="Initiatives/teaching-tools.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
+                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Project Card 2 -->
-                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Green Infrastructure</h3>
-                    <p class="text-gray-600 mb-4">
-                        Investigating best practices for representing LID and BMPs within continuous simulation models.
+                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-container mr-4" style="width:44px;height:44px;">
+                            <i class="fa-solid fa-cloud-rain text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Design Storm Standards</h3>
+                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Establishing standardized approaches for design storm selection and application in stormwater modeling.
                     </p>
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                    <a href="Initiatives/design-storm-standards.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
+                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
                 </div>
 
                 <!-- Project Card 3 -->
-                <div class="border border-gray-200 rounded-lg hover:shadow-lg transition p-6">
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Climate Resilience</h3>
-                    <p class="text-gray-600 mb-4">
-                        Updating rainfall distributions and modeling parameters to account for changing climate patterns.
+                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-container mr-4" style="width:44px;height:44px;">
+                            <i class="fa-solid fa-satellite-dish text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Real-Time Systems</h3>
+                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Advancing real-time monitoring and control systems for stormwater management and flood mitigation.
                     </p>
-                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read Update &rarr;</a>
+                    <a href="Initiatives/real-time-systems.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
+                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
+                    <div class="flex items-center mb-3">
+                        <div class="icon-container mr-4" style="width:44px;height:44px;">
+                            <i class="fa-solid fa-vial text-blue-700 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">SWMM Testing Protocol</h3>
+                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Developing testing protocols and validation procedures for SWMM model accuracy and reliability.
+                    </p>
+                    <a href="Initiatives/swmm-testing-protocol.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
+                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
                 </div>
 
             </div>
@@ -129,27 +296,27 @@
     </section>
 
     <!-- RESOURCES SECTION -->
-    <section id="resources" class="py-20 bg-white">
+    <section id="resources" class="py-14 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center mb-12">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Knowledge Hub</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Knowledge Hub</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
                     Educational Resources
-                </p>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
-                    A collection of education resources found throughout the web from various contributors. Reach out to have your content featured and help out.
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    A collection of educational resources from industry leaders and contributors.
                 </p>
             </div>
 
             <!-- Educational Resources -->
-            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12 mb-16">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">SWMM & Modeling Resources</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/EPA-swmm.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">EPA SWMM Website</p>
-                            <p class="text-sm text-gray-200">epa.gov/water-research/storm-water-management-model-swmm</p>
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-900 mb-5">SWMM & Modeling Resources</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" class="relative group rounded-xl overflow-hidden h-36 bg-cover bg-center hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-200" style="background-image: url('Learning/EPA-swmm.png');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/40 group-hover:from-black/90 group-hover:via-black/70 group-hover:to-black/50 transition-all duration-300"></div>
+                        <div class="relative h-full flex flex-col justify-end p-5 text-white">
+                            <p class="font-bold text-lg mb-1.5 group-hover:translate-x-1 transition-transform duration-200">EPA SWMM Website</p>
+                            <p class="text-xs text-gray-300 leading-relaxed">epa.gov/water-research/storm-water-management-model-swmm</p>
                         </div>
                     </a>
                     <a href="https://www.openswmm.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/openswmm_.png'); background-color: #1e40af;">
@@ -211,269 +378,540 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Data Sources for Modeling -->
-            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 md:p-12">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Data Sources for Modeling</h3>
-                
-                <!-- Precipitation/Meteorology -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-cloud-rain mr-2"></i>
-                        Precipitation/Meteorology
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
-                        <a href="http://www.dynsystem.com/netstorm/IDFStats.htm" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NetStorm Atlas, IDF statistics</a>
-                        <a href="https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, 1-min/5-min archives</a>
-                        <a href="https://www.ncei.noaa.gov/maps/hourly/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, hourly/15-min archives</a>
-                        <a href="https://www.ncei.noaa.gov/maps/alltimes/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, all duration archives</a>
-                        <a href="https://www.ncei.noaa.gov/access/us-climate-normals/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Climate normals</a>
-                        <a href="https://www.cocorahs.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">CoCoRaHS</a>
+    <!-- MEETING NOTES SECTION -->
+    <section id="meeting-notes" class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Committee Resources</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
+                    Meeting Notes
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    Access meeting notes and summaries from our committee meetings, generated with AI assistance.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Meeting Notes Card -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-file-lines text-blue-700 text-xl"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-green-600 bg-green-50 px-2.5 py-1 rounded-full">Latest</span>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">February 12, 2026</h3>
+                            <p class="text-sm text-gray-500">Committee Meeting</p>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                            ASCE EWRI UWRRC Stormwater Modeling Committee meeting notes generated by Gemini AI.
+                        </p>
+                        <a href="MeetingNotes/2026-02-12-meeting-notes.html" target="_blank" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition-colors group-hover:translate-x-1 duration-200">
+                            View Notes <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Hydrometry/Hydrography -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-water mr-2"></i>
-                        Hydrometry/Hydrography
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
-                        <a href="https://waterdata.usgs.gov/nwis/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Information System</a>
-                        <a href="https://tidesandcurrents.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Tide level archives and forecasts</a>
-                        <a href="https://modelmywatershed.org" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Model my Watershed (non-governmental organization)</a>
-                    </div>
-                </div>
+    <!-- DATA SOURCES FOR MODELING SECTION -->
+    <section id="data-sources" class="py-14 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Modeling Resources</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
+                    Data Sources for Modeling
+                </h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    Data sources and tools for stormwater modeling projects.
+                </p>
+            </div>
 
-                <!-- Topography -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-mountain mr-2"></i>
-                        Topography
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
-                        <a href="https://apps.nationalmap.gov/lidar-explorer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, LiDAR Explorer</a>
-                        <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
-                    </div>
-                </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
+                <div class="space-y-3">
+                    <!-- Precipitation/Meteorology -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-cloud-rain text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Precipitation/Meteorology</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA Atlas 14, IDF statistics
+                                </a>
+                                <a href="http://www.dynsystem.com/netstorm/IDFStats.htm" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NetStorm Atlas, IDF statistics
+                                </a>
+                                <a href="https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, 1-min/5-min archives
+                                </a>
+                                <a href="https://www.ncei.noaa.gov/maps/hourly/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, hourly/15-min archives
+                                </a>
+                                <a href="https://www.ncei.noaa.gov/maps/alltimes/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, all duration archives
+                                </a>
+                                <a href="https://www.ncei.noaa.gov/access/us-climate-normals/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, Climate normals
+                                </a>
+                                <a href="https://www.cocorahs.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    CoCoRaHS
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Buildings -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-building mr-2"></i>
-                        Buildings
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://gis-fema.hub.arcgis.com/pages/usa-structures" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">FEMA, National Buildings layer</a>
-                        <a href="https://www.openstreetmap.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">OpenStreetMap (gives roads etc.)</a>
-                    </div>
-                </div>
+                    <!-- Hydrometry/Hydrography -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-water text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Hydrometry/Hydrography</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, National Water Dashboard
+                                </a>
+                                <a href="https://waterdata.usgs.gov/nwis/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, National Water Information System
+                                </a>
+                                <a href="https://tidesandcurrents.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, Tide level archives and forecasts
+                                </a>
+                                <a href="https://modelmywatershed.org" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Model my Watershed (non-governmental organization)
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Parameters -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-sliders mr-2"></i>
-                        Parameters
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://www.mrlc.gov/viewer/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">MRLC, Hydrography/Impervious Surface/Tree Canopy/Land Cover</a>
-                        <a href="https://www.ecopiatech.com/resources/news/high-resolution-land-cover-data-from-ecopia-ai-now-publicly-available-through-noaa" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Improved Impervious Layer</a>
-                        <a href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USDA, WebSoil Survey</a>
-                    </div>
-                </div>
+                    <!-- Topography -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-mountain text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Topography</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, The National Map
+                                </a>
+                                <a href="https://apps.nationalmap.gov/lidar-explorer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, LiDAR Explorer
+                                </a>
+                                <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, Lidar/Land Cover/Topography
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- USA State Specific GIS -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-map mr-2"></i>
-                        USA State Specific GIS
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://www.pasda.psu.edu/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Pennsylvania: PASDA</a>
-                        <a href="https://vgin.vdem.virginia.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Virginia VGIN</a>
-                    </div>
-                </div>
+                    <!-- Buildings -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-building text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Buildings</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://gis-fema.hub.arcgis.com/pages/usa-structures" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    FEMA, National Buildings layer
+                                </a>
+                                <a href="https://www.openstreetmap.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    OpenStreetMap (gives roads etc.)
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- DEMs/LIDAR/Aerial Imagery -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-satellite mr-2"></i>
-                        DEMs/LIDAR/Aerial Imagery
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
-                        <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
-                    </div>
-                </div>
+                    <!-- Parameters -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-sliders text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Parameters</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://www.mrlc.gov/viewer/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    MRLC, Hydrography/Impervious Surface/Tree Canopy/Land Cover
+                                </a>
+                                <a href="https://www.ecopiatech.com/resources/news/high-resolution-land-cover-data-from-ecopia-ai-now-publicly-available-through-noaa" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA Improved Impervious Layer
+                                </a>
+                                <a href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USDA, WebSoil Survey
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Watershed Delineation Boundary Tool -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-map-marked-alt mr-2"></i>
-                        Watershed Delineation Boundary Tool
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://streamstats.usgs.gov/ss/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS StreamStats</a>
-                        <a href="https://modelmywatershed.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Stroud Water Research Center</a>
-                    </div>
-                </div>
+                    <!-- USA State Specific GIS -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-map text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">USA State Specific GIS</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://www.pasda.psu.edu/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Pennsylvania: PASDA
+                                </a>
+                                <a href="https://vgin.vdem.virginia.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Virginia VGIN
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Gage Station Data -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-gauge mr-2"></i>
-                        Gage Station Data
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
-                    </div>
-                </div>
+                    <!-- DEMs/LIDAR/Aerial Imagery -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-satellite text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">DEMs/LIDAR/Aerial Imagery</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA, Lidar/Land Cover/Topography
+                                </a>
+                                <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, The National Map
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Rainfall Design Storm Depths -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-cloud-showers-heavy mr-2"></i>
-                        Rainfall Design Storm Depths
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
-                    </div>
-                </div>
+                    <!-- Watershed Delineation Boundary Tool -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-map-marked-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Watershed Delineation Boundary Tool</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://streamstats.usgs.gov/ss/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS StreamStats
+                                </a>
+                                <a href="https://modelmywatershed.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Stroud Water Research Center
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Historic Extreme Event Data -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-exclamation-triangle mr-2"></i>
-                        Historic Extreme Event Data
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://storms.ngs.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Imagery NOAA</a>
-                        <a href="https://stn.wim.usgs.gov/FEV/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Gage Data/Images USGS</a>
-                    </div>
-                </div>
+                    <!-- Gage Station Data -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-gauge text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Gage Station Data</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    USGS, National Water Dashboard
+                                </a>
+                            </div>
+                        </div>
+                    </details>
 
-                <!-- Special Tools -->
-                <div class="mb-8">
-                    <h4 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-tools mr-2"></i>
-                        Special Tools
-                    </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-6">
-                        <a href="https://aip.neer.ai/project/cc13e63f-2eae-41b3-a3cc-76bc82edaa66?token=3435f1e5c611e25e" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">New Free Online Mapping Tool! (NEER)</a>
-                        <a href="https://swcweb.epa.gov/stormwatercalculator/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">EPA Stormwater Calculator (SWMM formatted files, rain gauge data, temperature data, land use parameters)</a>
-                    </div>
+                    <!-- Rainfall Design Storm Depths -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-cloud-showers-heavy text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Rainfall Design Storm Depths</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    NOAA Atlas 14, IDF statistics
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Historic Extreme Event Data -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-exclamation-triangle text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Historic Extreme Event Data</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://storms.ngs.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Imagery NOAA
+                                </a>
+                                <a href="https://stn.wim.usgs.gov/FEV/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    Gage Data/Images USGS
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Special Tools -->
+                    <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                        <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors duration-200">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 rounded-lg p-3 mr-4">
+                                    <i class="fa-solid fa-tools text-blue-600 text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Special Tools</h3>
+                            </div>
+                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-2 border-t border-gray-100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                                <a href="https://aip.neer.ai/project/cc13e63f-2eae-41b3-a3cc-76bc82edaa66?token=3435f1e5c611e25e" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    New Free Online Mapping Tool! (NEER)
+                                </a>
+                                <a href="https://swcweb.epa.gov/stormwatercalculator/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center group">
+                                    <i class="fa-solid fa-link text-xs mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    EPA Stormwater Calculator (SWMM formatted files, rain gauge data, temperature data, land use parameters)
+                                </a>
+                            </div>
+                        </div>
+                    </details>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- GET INVOLVED SECTION -->
-    <section id="join" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Join the Team!</h2>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                Reach out to join the team and contribute to the team mission!
-            </p>
-            <a href="mailto:contact@example.com" class="inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition">
-                Get Involved
-            </a>
+    <section id="join" class="py-14 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 border border-gray-100">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3 tracking-tight">Join the Team!</h2>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Contribute to advancing stormwater modeling and join a community of industry-leading professionals and practitioners.
+                </p>
+                <a href="mailto:contact@example.com" class="inline-block px-8 py-3 text-base font-semibold rounded-lg text-white btn-primary">
+                    Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFERENCES SECTION -->
+    <section id="conferences" class="py-14 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Events</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">Upcoming Conferences</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Where to find us and present your work</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 space-y-6">
+                <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">International LID Conference</h3>
+                    <p class="text-gray-600 text-sm mb-2">Jacksonville, FL • March 1–4</p>
+                    <a href="https://www.lidconference.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.lidconference.org</a>
+                </div>
+
+                <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">EWRI Congress</h3>
+                    <p class="text-gray-600 text-sm mb-2">Mobile, AL • April 26–29</p>
+                    <p class="text-blue-700 text-sm font-medium mb-2">Special technical session: "The Open SWMM Initiative"</p>
+                    <a href="https://www.ewricongress.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.ewricongress.org</a>
+                </div>
+
+                <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Watershed Management Conference</h3>
+                    <p class="text-gray-600 text-sm mb-2">Reston, VA • August 9–12</p>
+                    <a href="https://www.watershedmanagementconference.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.watershedmanagementconference.org</a>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">ASCE 2027 (includes EWRI Congress)</h3>
+                    <p class="text-gray-600 text-sm mb-2">Philadelphia, PA • March 1–5, 2027</p>
+                    <p class="text-gray-600 text-sm mb-2">Call for content due March 4</p>
+                    <a href="https://experience.asce.org/program/call-for-content" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">experience.asce.org/program/call-for-content</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- TEAM & MEMBERS SECTION -->
-    <section id="leadership" class="py-20 bg-gray-50">
+    <section id="leadership" class="py-14 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Committee Leadership -->
-            <div class="lg:text-center mb-12">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Team</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Our Team</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
                     Committee Leadership
-                </p>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experienced professionals leading the advancement of stormwater modeling</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/erica.jpg" alt="Erica McKenzie" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Erica McKenzie</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Lead Chair</p>
-                    <p class="text-gray-500 text-sm">Ph.D. Associate Professor at Temple University</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-12">
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/erica.jpg" alt="Erica McKenzie" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Erica McKenzie</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Lead Chair</p>
+                    <p class="text-gray-500 text-xs">Ph.D. Associate Professor, Temple University</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/mike.jpg" alt="Mike Gregory" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Mike Gregory</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Vice Chair</p>
-                    <p class="text-gray-500 text-sm">Water Resources Engineer at CHI</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/mike.jpg" alt="Mike Gregory" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Mike Gregory</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Vice Chair</p>
+                    <p class="text-gray-500 text-xs">Water Resources Engineer at CHI</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/scott-jeffers.jpg" alt="Scott Jeffers" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Scott Jeffers</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Secretary</p>
-                    <p class="text-gray-500 text-sm">President Anthropocene Engineering</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/scott-jeffers.jpg" alt="Scott Jeffers" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Scott Jeffers</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Secretary</p>
+                    <p class="text-gray-500 text-xs">President Anthropocene Engineering</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/dayton.jpg" alt="Dayton Marchese" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Dayton Marchese</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Past Chair</p>
-                    <p class="text-gray-500 text-sm">P.E. Strategic Partnerships Manager at OptiRTC</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/dayton.jpg" alt="Dayton Marchese" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Dayton Marchese</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
+                    <p class="text-gray-500 text-xs">P.E. at OptiRTC</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/Sample.jpg" alt="David James Sample" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">David James Sample</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Past Chair</p>
-                    <p class="text-gray-500 text-sm">Ph.D., P.E., BC.WRE, M.ASCE Professor at Virginia Tech</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/Sample.jpg" alt="David James Sample" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">David James Sample</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
+                    <p class="text-gray-500 text-xs">Ph.D., P.E., Professor at Virginia Tech</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/traver.jpg" alt="Robert Traver" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Robert Traver</h3>
-                    <p class="text-gray-600 font-semibold mb-1">Past-Chair</p>
-                    <p class="text-gray-500 text-sm">Professor at Villanova University</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/traver.jpg" alt="Robert Traver" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Robert Traver</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
+                    <p class="text-gray-500 text-xs">Professor at Villanova University</p>
                 </div>
-                <div class="bg-gray-50 rounded-lg p-6 text-center">
-                    <img src="Members/shirley.jpg" alt="Shirley Clark" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Shirley Clark</h3>
-                    <p class="text-gray-600 font-semibold mb-1">ASCE | EWRI President</p>
-                    <p class="text-gray-500 text-sm">Professor of Environmental Engineering at Penn State Harrisburg and ASCE-EWRI President</p>
+                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                    <img src="Members/shirley.jpg" alt="Shirley Clark" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                    <h3 class="text-base font-bold text-gray-900 mb-1">Shirley Clark</h3>
+                    <p class="text-blue-700 font-semibold text-xs mb-1">ASCE | EWRI President</p>
+                    <p class="text-gray-500 text-xs">Professor, Penn State Harrisburg</p>
                 </div>
             </div>
 
             <!-- Content Contributors -->
-            <div class="mt-16 mb-16">
-                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Content Contributors</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
-                        <img src="Members/bob.jpg" alt="Robert (Bob) Dickinson" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
-                        <h4 class="font-bold text-lg text-blue-900 mb-1">Robert (Bob) Dickinson</h4>
-                        <p class="text-gray-600 text-sm">Member</p>
-                        <p class="text-gray-500 text-sm mt-1">Autodesk Water Technologist for Storm Sewer and Flood</p>
+            <div class="mt-12 mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Content Contributors</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                        <img src="Members/bob.jpg" alt="Robert (Bob) Dickinson" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                        <h4 class="font-bold text-base text-gray-900 mb-1">Robert (Bob) Dickinson</h4>
+                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
+                        <p class="text-gray-500 text-xs">Autodesk Water Technologist</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
-                        <img src="Members/mitch.jpg" alt="Mitch Heineman" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
-                        <h4 class="font-bold text-lg text-blue-900 mb-1">Mitch Heineman</h4>
-                        <p class="text-gray-600 text-sm">Member</p>
-                        <p class="text-gray-500 text-sm mt-1">Collection Systems Discipline leader | CDM Smith</p>
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                        <img src="Members/mitch.jpg" alt="Mitch Heineman" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                        <h4 class="font-bold text-base text-gray-900 mb-1">Mitch Heineman</h4>
+                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
+                        <p class="text-gray-500 text-xs">Collection Systems Leader | CDM Smith</p>
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-lg p-5 text-center">
-                        <img src="Members/bryant.jpg" alt="Bryant McDonnell" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-blue-200">
-                        <h4 class="font-bold text-lg text-blue-900 mb-1">Bryant McDonnell</h4>
-                        <p class="text-gray-600 text-sm">Member</p>
-                        <p class="text-gray-500 text-sm mt-1">Principal and Founder at Hydroinformatics, LLC</p>
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
+                        <img src="Members/bryant.jpg" alt="Bryant McDonnell" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
+                        <h4 class="font-bold text-base text-gray-900 mb-1">Bryant McDonnell</h4>
+                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
+                        <p class="text-gray-500 text-xs">Principal, Hydroinformatics LLC</p>
                     </div>
                 </div>
             </div>
 
             <!-- Committee Members -->
-            <div class="lg:text-center mb-12">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Community</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Stormwater Modeling Committee Members
-                </p>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
-                    Join the Team! Reach out to join the team and contribute to the team mission!
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 tracking-tight">
+                    Committee Members
+                </h2>
+                <p class="text-gray-600 text-sm">
+                    Reach out to join the team and contribute to the mission.
                 </p>
             </div>
-            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
                     <div>David James Sample, Ph.D., P.E., BC.WRE, M.ASCE</div>
                     <div>Dayton Marchese, P.E.</div>
@@ -523,23 +961,48 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
-            <div>
-                <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-12 mb-4 brightness-150 opacity-90">
-                <h4 class="text-xl font-bold mb-4">ASCE EWRI Stormwater Modeling Committee</h4>
-                <p class="text-gray-400">
-                    Environmental & Water Resources Institute<br>
-                    Stormwater Modeling Committee
-                </p>
-            </div>
-            <div class="md:text-right">
-                <p class="text-gray-400 mb-4">Contact Committee Leadership</p>
-                <a href="mailto:contact@example.com" class="text-blue-400 hover:text-blue-300">contact@example.org</a>
-                <div class="mt-4 space-x-4">
-                    <a href="https://www.linkedin.com/in/scott-jeffers-pe-phd-a7638717/" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-10 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="Images/Icon 3 (1).png" alt="ASCE EWRI Logo" class="h-12 mr-3 brightness-150 opacity-95">
+                        <div>
+                            <h4 class="text-lg font-bold">ASCE EWRI</h4>
+                            <p class="text-sm text-gray-400">Stormwater Modeling</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">
+                        Environmental & Water Resources Institute<br>
+                        Stormwater Modeling Committee
+                    </p>
                 </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors text-sm">Current Initiatives</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white transition-colors text-sm">Resources</a></li>
+                        <li><a href="#meeting-notes" class="text-gray-400 hover:text-white transition-colors text-sm">Meeting Notes</a></li>
+                        <li><a href="#conferences" class="text-gray-400 hover:text-white transition-colors text-sm">Conferences</a></li>
+                        <li><a href="#leadership" class="text-gray-400 hover:text-white transition-colors text-sm">Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact</h5>
+                    <p class="text-gray-400 mb-4 text-sm">Contact Committee Leadership</p>
+                    <a href="mailto:contact@example.com" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">contact@example.org</a>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="https://www.linkedin.com/in/scott-jeffers-pe-phd-a7638717/" target="_blank" class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                            <i class="fa-brands fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" class="w-10 h-10 bg-gray-700 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                            <i class="fa-brands fa-youtube text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2026 ASCE EWRI Stormwater Modeling Committee. All rights reserved.</p>
             </div>
         </div>
     </footer>
