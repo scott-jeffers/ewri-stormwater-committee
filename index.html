@@ -133,12 +133,12 @@
                 <!-- Logo / Brand -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="flex items-center group">
-                        <img src="Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-12 mr-3 transition-transform duration-300 group-hover:scale-105 object-contain">
-                        <div>
-                            <span class="text-xl font-bold text-gray-900 tracking-tight block leading-tight">
+                        <img src="Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-10 sm:h-12 mr-2 sm:mr-3 transition-transform duration-300 group-hover:scale-105 object-contain flex-shrink-0">
+                        <div class="min-w-0">
+                            <span class="text-base sm:text-xl font-bold text-gray-900 tracking-tight block leading-tight truncate">
                                 ASCE EWRI
                             </span>
-                            <span class="text-sm font-medium text-gray-600 block leading-tight">
+                            <span class="text-xs sm:text-sm font-medium text-gray-600 block leading-tight max-w-[140px] sm:max-w-none truncate">
                                 Stormwater Modeling Committee
                             </span>
                         </div>
@@ -154,9 +154,46 @@
                     <a href="#leadership" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Team</a>
                     <a href="#join" class="ml-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-blue-700 to-blue-800 text-white hover:from-blue-800 hover:to-blue-900 transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg">Get Involved</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center p-3 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 transition-colors min-w-[44px] min-h-[44px]" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-md">
+            <div class="px-4 py-4 space-y-1">
+                <a href="#projects" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Projects</a>
+                <a href="#resources" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Resources</a>
+                <a href="#conferences" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Conferences</a>
+                <a href="#meeting-notes" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Meeting Notes</a>
+                <a href="#leadership" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Team</a>
+                <a href="#join" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-blue-800 text-white text-center font-semibold mt-2">Get Involved</a>
             </div>
         </div>
     </nav>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            var btn = this;
+            var icon = btn.querySelector('i');
+            menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('mobile-menu-btn').setAttribute('aria-expanded', 'false');
+                document.getElementById('mobile-menu-btn').querySelector('i').classList.add('fa-bars');
+                document.getElementById('mobile-menu-btn').querySelector('i').classList.remove('fa-xmark');
+            });
+        });
+    </script>
 
     <!-- HERO SECTION -->
     <header class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
