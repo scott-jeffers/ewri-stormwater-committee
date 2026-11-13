@@ -298,10 +298,9 @@ a.card:hover .go { background: var(--ink); color: #fff; transform: rotate(-45deg
 /* People */
 .leaders { display: grid; gap: 28px 20px; grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 760px) { .leaders { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 760px) { .leaders.officers { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
-@media (max-width: 759px) { .leaders.officers .person:first-child { grid-column: 1 / -1; } }
-.leaders.officers .person h3 { font-size: 22px; }
-.leaders.officers .person-photo { aspect-ratio: 4 / 3.4; }
+.leaders.officers .person h3 { font-size: 20px; }
+.person h3 a { color: inherit; text-decoration: none; }
+.person h3 a:hover { color: var(--blue-deep); text-decoration: underline; }
 .person { text-align: left; }
 .person-photo { position: relative; aspect-ratio: 1 / 1; border-radius: 18px; overflow: hidden; background: var(--bg-soft); margin-bottom: 16px; }
 .person-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.95); transition: transform .4s ease; }
