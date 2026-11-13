@@ -1,0 +1,3 @@
+# Netlify only (GitHub Pages ignores this file).
+# Send everyone on the old Netlify URL to the official domain, keeping the path.
+https://ewri-stormwater.netlify.app/*  https://ewri-stormwater.org/:splat  301!
