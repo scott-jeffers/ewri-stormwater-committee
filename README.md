@@ -37,3 +37,6 @@ It is a plain static site — HTML, one stylesheet, one small script. No build s
 
 Deployed by GitHub Pages from the `main` branch (root). Any push to `main` goes live in about a minute.
 Preview locally with `python3 -m http.server` and open http://localhost:8000.
+
+**Cache busting:** pages load `assets/site.css?v=YYYYMMDD`. After changing the CSS or JS, bump that
+number in every HTML file (search & replace) so visitors' browsers fetch the new version.
