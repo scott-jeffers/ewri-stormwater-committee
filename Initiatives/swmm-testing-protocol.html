@@ -1,142 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWMM Testing Protocol | ASCE EWRI Stormwater Modeling Committee</title>
-    
-    <link rel="icon" type="image/svg+xml" href="../Images/Icon_Converted.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWMM Testing Protocol | Stormwater Modeling Committee · ASCE EWRI</title>
+  <meta name="description" content="A community benchmark suite that any SWMM engine, fork or new implementation can run to show it reproduces the reference results.">
+  <link rel="canonical" href="https://ewri-stormwater.org/Initiatives/swmm-testing-protocol.html">
+  <meta name="theme-color" content="#061a2b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASCE EWRI Stormwater Modeling Committee">
+  <meta property="og:title" content="SWMM Testing Protocol | Stormwater Modeling Committee · ASCE EWRI">
+  <meta property="og:description" content="A community benchmark suite that any SWMM engine, fork or new implementation can run to show it reproduces the reference results.">
+  <meta property="og:url" content="https://ewri-stormwater.org/Initiatives/swmm-testing-protocol.html">
+  <meta property="og:image" content="https://ewri-stormwater.org/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/mark-simple.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preload" href="../assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-
-    <nav class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <a href="../index.html" class="flex items-center">
-                    <img src="../Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-10 mr-3 object-contain">
-                    <div>
-                        <span class="text-lg font-bold text-gray-900 block">ASCE EWRI</span>
-                        <span class="text-sm text-gray-600 block">Stormwater Modeling Committee</span>
-                    </div>
-                </a>
-                <a href="../index.html#projects" class="text-blue-700 font-semibold text-sm hover:text-blue-800">
-                    ← Back to Current Initiatives
-                </a>
-            </div>
-        </div>
+<body class="inner">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Stormwater Modeling Committee — home">
+        <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-name">Stormwater Modeling Committee</span>
+          <span class="brand-org">ASCE | EWRI</span>
+        </span>
+      </a>
+      <div class="nav-links">
+          <a href="../index.html#projects">Initiatives</a>
+          <a href="../index.html#resources">Resources</a>
+          <a href="../index.html#conferences">Events</a>
+          <a href="../index.html#meeting-notes">Meeting Notes</a>
+          <a href="../index.html#leadership">People</a>
+        <a class="btn btn-primary btn-sm" href="../index.html#join">Get involved</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-menu"></use></svg>
+      </button>
     </nav>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+      <a href="../index.html#projects">Initiatives</a>
+      <a href="../index.html#resources">Resources</a>
+      <a href="../index.html#conferences">Events</a>
+      <a href="../index.html#meeting-notes">Meeting Notes</a>
+      <a href="../index.html#leadership">People</a>
+      <a class="btn btn-primary" href="../index.html#join">Get involved</a>
+  </div>
+</header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        <nav class="text-sm text-gray-500 mb-8">
-            <a href="../index.html" class="hover:text-blue-600">Home</a>
-            <span class="mx-2">/</span>
-            <a href="../index.html#projects" class="hover:text-blue-600">Current Initiatives</a>
-            <span class="mx-2">/</span>
-            <span class="text-gray-900 font-medium">SWMM Testing Protocol</span>
-        </nav>
+<main id="main">
+  <section class="page-hero">
+    <div class="wave-field" data-lines="30"></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../index.html#projects">Initiatives</a><span>/</span><span aria-current="page">SWMM Testing Protocol</span></nav>
+      <span class="eyebrow light">Task committee</span>
+      <h1>SWMM Testing Protocol</h1>
+      <p class="lead">A community benchmark suite that any SWMM engine, fork or new implementation can run to show it reproduces the reference results.</p>
+      <div class="hero-chips">
+        <span class="chip">Lead: <b>Bryant McDonnell</b></span>
+        <span class="chip">Status: <b>Active</b></span>
+        <span class="chip">February 2026</span>
+      </div>
+    </div>
+  </section>
 
-        <header class="mb-10">
-            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-4">Active</span>
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">SWMM Testing Protocol</h1>
-            <p class="text-xl text-gray-600 leading-relaxed">
-                Developing comprehensive testing protocols and validation procedures to ensure SWMM model accuracy, reliability, and consistency across applications.
-            </p>
-        </header>
+  <div class="page-body">
+    <div class="container layout">
+      <article class="prose">
+        <h2>Overview</h2>
+        <p class="lede">Over the past decade the number of SWMM forks and derivative engines has grown quickly. Practitioners and reviewers need a reliable way to know whether a given engine produces results consistent with the reference implementation.</p>
+        <p>This task committee is assembling a standard, version-controlled set of test models that exercise the full range of SWMM hydrology and hydraulics. The suite will be tied to specific SWMM versions, built on the standard INP, OUT and RPT file formats, and published openly so that any developer can run it.</p>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-circle-info text-blue-600 mr-3"></i>
-                Overview
-            </h2>
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    As SWMM and related tools evolve, establishing standardized testing protocols helps ensure model reliability and interoperability. This initiative develops procedures for validating model results, benchmarking performance, and documenting quality assurance practices.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    The protocol will address unit and integration testing, benchmark models, acceptance criteria, and documentation standards that agencies and consultants can adopt for model review and approval processes.
-                </p>
-            </div>
-        </section>
+        <h3>Focus areas</h3>
+        <ul>
+          <li>Benchmark models covering every major SWMM process and routing method</li>
+          <li>Acceptance criteria and tolerances for comparing engines</li>
+          <li>Version control that ties each benchmark to a specific reference release</li>
+          <li>A public GitHub repository of input files and expected results</li>
+        </ul>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-newspaper text-blue-600 mr-3"></i>
-                Recent Updates
-            </h2>
-            <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                    <p class="text-sm font-semibold text-blue-600 mb-2">February 2026</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Initiative underway. Committee is reviewing existing testing approaches from EPA, software vendors, and research, and drafting an initial protocol outline.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <h2>Recent updates</h2>
+        <ol class="timeline">
+          <li><time>February 2026</time><p>Proposed at the February committee meeting. Members agreed the legacy test cases are too simple and outdated, and that the suite should be community-maintained. Because EPA cannot endorse third-party products, the suite is framed as a community benchmark rather than an EPA certification.</p></li>
+        </ol>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-flag text-blue-600 mr-3"></i>
-                Key Milestones
-            </h2>
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-check text-green-600 mt-1 mr-3"></i>
-                        <span>Initiative launched</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-spinner text-blue-600 mt-1 mr-3"></i>
-                        <span>Review existing testing frameworks</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-regular fa-circle text-gray-400 mt-1 mr-3"></i>
-                        <span>Draft testing protocol document</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-regular fa-circle text-gray-400 mt-1 mr-3"></i>
-                        <span>Pilot and refine protocol</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h2>Milestones</h2>
+        <ul class="milestones">
+          <li class="done"><span class="status"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-check"></use></svg></span>Proposal accepted by the committee<span class="tag">Complete</span></li>
+          <li class="now"><span class="status"></span>Task committee formation and work plan<span class="tag">In progress</span></li>
+          <li class="next"><span class="status"></span>Collect benchmark models in a public repository<span class="tag">Planned</span></li>
+          <li class="next"><span class="status"></span>Define acceptance criteria and publish version 1<span class="tag">Planned</span></li>
+        </ul>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-handshake text-blue-600 mr-3"></i>
-                How to Contribute
-            </h2>
-            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Model reviewers, software developers, and practitioners with QA/QC experience are encouraged to contribute. Help define acceptance criteria, suggest benchmark cases, or review draft protocols.
-                </p>
-                <a href="mailto:contact@example.com" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800">
-                    <i class="fa-solid fa-envelope mr-2"></i>
-                    Contact the Initiative Lead
-                </a>
-            </div>
-        </section>
-
-        <div class="pt-8 border-t border-gray-200">
-            <a href="../index.html#projects" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                Back to Current Initiatives
-            </a>
+        <div class="callout">
+          <h2>How to contribute</h2>
+          <p>Software developers, model reviewers and anyone with well-documented test models are encouraged to contribute benchmark cases or help define acceptance criteria.</p>
+          <a class="btn btn-primary" href="mailto:contact@ewri-stormwater.org?subject=SWMM%20Testing%20Protocol%20task%20committee">Contact the task committee <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow-right"></use></svg></a>
         </div>
-    </main>
+      </article>
 
-    <footer class="bg-gray-900 text-white py-8 mt-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">ASCE EWRI Stormwater Modeling Committee</p>
-            <a href="../index.html" class="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block">Return to Home</a>
+      <aside class="aside">
+        <div class="panel">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Lead</dt><dd>Bryant McDonnell</dd></div>
+            <div><dt>With</dt><dd>Michael Tryby</dd><dd>Constantine Karos</dd></div>
+            <div><dt>Status</dt><dd>Active</dd></div>
+            <div><dt>Last updated</dt><dd>February 2026</dd></div>
+          </dl>
         </div>
-    </footer>
+        <div class="panel tint">
+          <h3>Other initiatives</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;gap:8px">
+          <li><a href="design-storm-standards.html">Design Storm Standards</a></li>
+          <li><a href="real-time-systems.html">Real-Time Systems</a></li>
+          <li><a href="teaching-tools.html">Teaching Tools</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+<div class="footer-rule" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html">
+          <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+          <span class="brand-text">
+            <span class="brand-name">Stormwater Modeling Committee</span>
+            <span class="brand-org">ASCE | EWRI</span>
+          </span>
+        </a>
+        <p>A technical committee of the Urban Water Resources Research Council within the Environmental &amp; Water Resources Institute (EWRI) of the American Society of Civil Engineers.</p>
+        <div class="socials">
+          <a href="mailto:contact@ewri-stormwater.org" aria-label="Email the committee"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mail"></use></svg></a>
+          <a href="https://www.youtube.com/@StormwaterModelingEWRI" aria-label="YouTube channel" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-youtube"></use></svg></a>
+          <a href="https://github.com/scott-jeffers/ewri-stormwater-committee" aria-label="Website source on GitHub" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-github"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Committee</h4>
+        <ul>
+          <li><a href="../index.html#projects">Task committees</a></li>
+          <li><a href="../index.html#conferences">Events</a></li>
+          <li><a href="../index.html#meeting-notes">Meeting notes</a></li>
+          <li><a href="../index.html#leadership">People</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../Resources/data-sources.html">Data sources</a></li>
+          <li><a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" rel="noopener">EPA SWMM</a></li>
+          <li><a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" rel="noopener">Video library</a></li>
+          <li><a href="../index.html#resources">All resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:contact@ewri-stormwater.org">contact@ewri-stormwater.org</a></li>
+          <li><a href="../index.html#join">Join the committee</a></li>
+          <li><a href="https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute" target="_blank" rel="noopener">ASCE EWRI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ASCE EWRI Stormwater Modeling Committee</span>
+      <span>Maintained by committee volunteers. Not an official ASCE publication.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

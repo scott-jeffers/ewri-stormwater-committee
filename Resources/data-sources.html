@@ -1,274 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Sources for Modeling | ASCE EWRI Stormwater Modeling Committee</title>
-    
-    <link rel="icon" type="image/svg+xml" href="../Images/Icon_Converted.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; }
-        details summary { list-style: none; }
-        details summary::-webkit-details-marker { display: none; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data sources for modeling | Stormwater Modeling Committee · ASCE EWRI</title>
+  <meta name="description" content="Public precipitation, streamflow, topography, land cover, soils and building datasets for stormwater modeling, curated by the ASCE EWRI Stormwater Modeling Committee.">
+  <link rel="canonical" href="https://ewri-stormwater.org/Resources/data-sources.html">
+  <meta name="theme-color" content="#061a2b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASCE EWRI Stormwater Modeling Committee">
+  <meta property="og:title" content="Data sources for modeling | Stormwater Modeling Committee · ASCE EWRI">
+  <meta property="og:description" content="Public precipitation, streamflow, topography, land cover, soils and building datasets for stormwater modeling, curated by the ASCE EWRI Stormwater Modeling Committee.">
+  <meta property="og:url" content="https://ewri-stormwater.org/Resources/data-sources.html">
+  <meta property="og:image" content="https://ewri-stormwater.org/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/mark-simple.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preload" href="../assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-
-    <nav class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <a href="../index.html" class="flex items-center">
-                    <img src="../Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-10 mr-3 object-contain">
-                    <div>
-                        <span class="text-lg font-bold text-gray-900 block">ASCE EWRI</span>
-                        <span class="text-sm text-gray-600 block">Stormwater Modeling Committee</span>
-                    </div>
-                </a>
-                <a href="../index.html#resources" class="text-blue-700 font-semibold text-sm hover:text-blue-800">
-                    ← Back to Resources
-                </a>
-            </div>
-        </div>
+<body class="inner">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Stormwater Modeling Committee — home">
+        <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-name">Stormwater Modeling Committee</span>
+          <span class="brand-org">ASCE | EWRI</span>
+        </span>
+      </a>
+      <div class="nav-links">
+          <a href="../index.html#projects">Initiatives</a>
+          <a href="../index.html#resources">Resources</a>
+          <a href="../index.html#conferences">Events</a>
+          <a href="../index.html#meeting-notes">Meeting Notes</a>
+          <a href="../index.html#leadership">People</a>
+        <a class="btn btn-primary btn-sm" href="../index.html#join">Get involved</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-menu"></use></svg>
+      </button>
     </nav>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+      <a href="../index.html#projects">Initiatives</a>
+      <a href="../index.html#resources">Resources</a>
+      <a href="../index.html#conferences">Events</a>
+      <a href="../index.html#meeting-notes">Meeting Notes</a>
+      <a href="../index.html#leadership">People</a>
+      <a class="btn btn-primary" href="../index.html#join">Get involved</a>
+  </div>
+</header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        <nav class="text-sm text-gray-500 mb-8">
-            <a href="../index.html" class="hover:text-blue-600">Home</a>
-            <span class="mx-2">/</span>
-            <a href="../index.html#resources" class="hover:text-blue-600">Educational Resources</a>
-            <span class="mx-2">/</span>
-            <span class="text-gray-900 font-medium">Data Sources for Modeling</span>
-        </nav>
+<main id="main">
+  <section class="page-hero">
+    <div class="wave-field" data-lines="30"></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../index.html#resources">Resources</a><span>/</span><span aria-current="page">Data sources</span></nav>
+      <span class="eyebrow light">Resources</span>
+      <h1>Data sources for modeling</h1>
+      <p class="lead">Public datasets that committee members rely on for precipitation, flow, terrain, land cover, soils and infrastructure. Most are U.S.-focused; suggestions for other regions are welcome.</p>
+    </div>
+  </section>
+  <div class="page-body">
+    <div class="container">
+      <nav class="toc" aria-label="Categories">
+        <a href="#precipitation">Precipitation & meteorology</a>
+        <a href="#flow">Streamflow, gages & tides</a>
+        <a href="#topography">Topography, lidar & imagery</a>
+        <a href="#parameters">Land cover, imperviousness & soils</a>
+        <a href="#buildings">Buildings & infrastructure</a>
+        <a href="#watersheds">Watersheds & delineation</a>
+        <a href="#events">Historic extreme events</a>
+        <a href="#state">State GIS portals</a>
+        <a href="#tools">Tools</a>
+      </nav>
 
-        <header class="mb-10">
-            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-4">Modeling Resources</span>
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Data Sources for Modeling</h1>
-            <p class="text-xl text-gray-600 leading-relaxed">
-                Data sources and tools for stormwater modeling projects.
-            </p>
-        </header>
-
-        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
-            <div class="space-y-3">
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-cloud-rain text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Precipitation/Meteorology</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
-                            <a href="http://www.dynsystem.com/netstorm/IDFStats.htm" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NetStorm Atlas, IDF statistics</a>
-                            <a href="https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, 1-min/5-min archives</a>
-                            <a href="https://www.ncei.noaa.gov/maps/hourly/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, hourly/15-min archives</a>
-                            <a href="https://www.ncei.noaa.gov/maps/alltimes/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, all duration archives</a>
-                            <a href="https://www.ncei.noaa.gov/access/us-climate-normals/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Climate normals</a>
-                            <a href="https://www.cocorahs.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">CoCoRaHS</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-water text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Hydrometry/Hydrography</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
-                            <a href="https://waterdata.usgs.gov/nwis/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Information System</a>
-                            <a href="https://tidesandcurrents.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Tide level archives and forecasts</a>
-                            <a href="https://modelmywatershed.org" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Model my Watershed</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-mountain text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Topography</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
-                            <a href="https://apps.nationalmap.gov/lidar-explorer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, LiDAR Explorer</a>
-                            <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-building text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Buildings</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://gis-fema.hub.arcgis.com/pages/usa-structures" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">FEMA, National Buildings layer</a>
-                            <a href="https://www.openstreetmap.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">OpenStreetMap</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-sliders text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Parameters</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://www.mrlc.gov/viewer/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">MRLC, Hydrography/Impervious Surface/Tree Canopy/Land Cover</a>
-                            <a href="https://www.ecopiatech.com/resources/news/high-resolution-land-cover-data-from-ecopia-ai-now-publicly-available-through-noaa" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Improved Impervious Layer</a>
-                            <a href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USDA, WebSoil Survey</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-map text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">USA State Specific GIS</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://www.pasda.psu.edu/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Pennsylvania: PASDA</a>
-                            <a href="https://vgin.vdem.virginia.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Virginia VGIN</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-satellite text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">DEMs/LIDAR/Aerial Imagery</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://coast.noaa.gov/dataviewer/#/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA, Lidar/Land Cover/Topography</a>
-                            <a href="https://apps.nationalmap.gov/downloader/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, The National Map</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-map-marked-alt text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Watershed Delineation Boundary Tool</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://streamstats.usgs.gov/ss/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS StreamStats</a>
-                            <a href="https://modelmywatershed.org/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Stroud Water Research Center</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-gauge text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Gage Station Data</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">USGS, National Water Dashboard</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-cloud-showers-heavy text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Rainfall Design Storm Depths</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">NOAA Atlas 14, IDF statistics</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-exclamation-triangle text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Historic Extreme Event Data</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://storms.ngs.noaa.gov/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Imagery NOAA</a>
-                            <a href="https://stn.wim.usgs.gov/FEV/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">Gage Data/Images USGS</a>
-                        </div>
-                    </div>
-                </details>
-
-                <details class="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden border border-gray-200">
-                    <summary class="cursor-pointer p-5 flex items-center justify-between hover:bg-blue-50 transition-colors">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 rounded-lg p-3 mr-4"><i class="fa-solid fa-tools text-blue-600 text-xl"></i></div>
-                            <h3 class="text-lg font-bold text-gray-900">Special Tools</h3>
-                        </div>
-                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="px-5 pb-5 pt-2 border-t border-gray-100">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                            <a href="https://aip.neer.ai/project/cc13e63f-2eae-41b3-a3cc-76bc82edaa66?token=3435f1e5c611e25e" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">New Free Online Mapping Tool! (NEER)</a>
-                            <a href="https://swcweb.epa.gov/stormwatercalculator/" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">EPA Stormwater Calculator</a>
-                        </div>
-                    </div>
-                </details>
-            </div>
+      <section class="ds-group" id="precipitation">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-rain"></use></svg></span><h2>Precipitation & meteorology</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://hdsc.nws.noaa.gov/pfds/" target="_blank" rel="noopener"><span><b>NOAA Atlas 14</b><small>Precipitation frequency estimates (PFDS)</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="http://www.dynsystem.com/netstorm/IDFStats.htm" target="_blank" rel="noopener"><span><b>NetSTORM Atlas</b><small>IDF statistics by station</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems" target="_blank" rel="noopener"><span><b>NOAA ASOS</b><small>1-minute and 5-minute archives</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.ncei.noaa.gov/maps/hourly/" target="_blank" rel="noopener"><span><b>NOAA NCEI</b><small>Hourly and 15-minute archives</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.ncei.noaa.gov/maps/alltimes/" target="_blank" rel="noopener"><span><b>NOAA NCEI</b><small>All-duration station archives</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.ncei.noaa.gov/access/us-climate-normals/" target="_blank" rel="noopener"><span><b>NOAA Climate Normals</b><small>30-year climate normals</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.cocorahs.org/" target="_blank" rel="noopener"><span><b>CoCoRaHS</b><small>Community daily precipitation network</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
         </div>
-
-        <div class="pt-8 mt-8 border-t border-gray-200">
-            <a href="../index.html#resources" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                Back to Educational Resources
-            </a>
+      </section>
+      <section class="ds-group" id="flow">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-droplet"></use></svg></span><h2>Streamflow, gages & tides</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://dashboard.waterdata.usgs.gov/app/nwd/en/?aoi=default" target="_blank" rel="noopener"><span><b>USGS National Water Dashboard</b><small>Real-time gage conditions</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://waterdata.usgs.gov/nwis/" target="_blank" rel="noopener"><span><b>USGS NWIS</b><small>National Water Information System</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener"><span><b>NOAA Tides & Currents</b><small>Tide level archives and forecasts</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
         </div>
-    </main>
-
-    <footer class="bg-gray-900 text-white py-8 mt-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">ASCE EWRI Stormwater Modeling Committee</p>
-            <a href="../index.html" class="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block">Return to Home</a>
+      </section>
+      <section class="ds-group" id="topography">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mountain"></use></svg></span><h2>Topography, lidar & imagery</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://apps.nationalmap.gov/downloader/" target="_blank" rel="noopener"><span><b>USGS The National Map</b><small>DEMs, hydrography and imagery downloads</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://apps.nationalmap.gov/lidar-explorer/#/" target="_blank" rel="noopener"><span><b>USGS LiDAR Explorer</b><small>3DEP lidar coverage and downloads</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://coast.noaa.gov/dataviewer/#/" target="_blank" rel="noopener"><span><b>NOAA Digital Coast</b><small>Lidar, land cover and topography</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
         </div>
-    </footer>
+      </section>
+      <section class="ds-group" id="parameters">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-layers"></use></svg></span><h2>Land cover, imperviousness & soils</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://www.mrlc.gov/viewer/" target="_blank" rel="noopener"><span><b>MRLC viewer</b><small>NLCD land cover, impervious surface and tree canopy</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.ecopiatech.com/resources/news/high-resolution-land-cover-data-from-ecopia-ai-now-publicly-available-through-noaa" target="_blank" rel="noopener"><span><b>NOAA high-resolution impervious layer</b><small>Ecopia AI land cover via NOAA</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://websoilsurvey.nrcs.usda.gov/app/" target="_blank" rel="noopener"><span><b>USDA Web Soil Survey</b><small>Soil properties and hydrologic soil groups</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <section class="ds-group" id="buildings">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-building"></use></svg></span><h2>Buildings & infrastructure</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://gis-fema.hub.arcgis.com/pages/usa-structures" target="_blank" rel="noopener"><span><b>FEMA USA Structures</b><small>National building footprints</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://www.openstreetmap.org/" target="_blank" rel="noopener"><span><b>OpenStreetMap</b><small>Streets, buildings and land use</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <section class="ds-group" id="watersheds">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-map"></use></svg></span><h2>Watersheds & delineation</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://streamstats.usgs.gov/ss/" target="_blank" rel="noopener"><span><b>USGS StreamStats</b><small>Watershed delineation and basin characteristics</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://modelmywatershed.org/" target="_blank" rel="noopener"><span><b>Model My Watershed</b><small>Stroud Water Research Center</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <section class="ds-group" id="events">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-history"></use></svg></span><h2>Historic extreme events</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://storms.ngs.noaa.gov/" target="_blank" rel="noopener"><span><b>NOAA Emergency Response Imagery</b><small>Post-storm aerial imagery</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://stn.wim.usgs.gov/FEV/" target="_blank" rel="noopener"><span><b>USGS Flood Event Viewer</b><small>High-water marks and event gage data</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <section class="ds-group" id="state">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-globe"></use></svg></span><h2>State GIS portals</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://www.pasda.psu.edu/" target="_blank" rel="noopener"><span><b>PASDA</b><small>Pennsylvania Spatial Data Access</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://vgin.vdem.virginia.gov/" target="_blank" rel="noopener"><span><b>VGIN</b><small>Virginia Geographic Information Network</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <section class="ds-group" id="tools">
+        <div class="ds-group-head"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-sliders"></use></svg></span><h2>Tools</h2></div>
+        <div class="ds-links">
+            <a class="ds-link" href="https://swcweb.epa.gov/stormwatercalculator/" target="_blank" rel="noopener"><span><b>EPA National Stormwater Calculator</b><small>Site-scale runoff and green infrastructure</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+            <a class="ds-link" href="https://aip.neer.ai/project/cc13e63f-2eae-41b3-a3cc-76bc82edaa66?token=3435f1e5c611e25e" target="_blank" rel="noopener"><span><b>NEER online mapping tool</b><small>Free web-based mapping tool</small></span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </section>
+      <div class="callout">
+        <h2>Know a source we’re missing?</h2>
+        <p>Send us a link and a sentence about how you use it, and we’ll add it to the list.</p>
+        <a class="btn btn-primary" href="mailto:contact@ewri-stormwater.org?subject=Data%20source%20suggestion">Suggest a data source <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow-right"></use></svg></a>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="footer-rule" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html">
+          <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+          <span class="brand-text">
+            <span class="brand-name">Stormwater Modeling Committee</span>
+            <span class="brand-org">ASCE | EWRI</span>
+          </span>
+        </a>
+        <p>A technical committee of the Urban Water Resources Research Council within the Environmental &amp; Water Resources Institute (EWRI) of the American Society of Civil Engineers.</p>
+        <div class="socials">
+          <a href="mailto:contact@ewri-stormwater.org" aria-label="Email the committee"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mail"></use></svg></a>
+          <a href="https://www.youtube.com/@StormwaterModelingEWRI" aria-label="YouTube channel" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-youtube"></use></svg></a>
+          <a href="https://github.com/scott-jeffers/ewri-stormwater-committee" aria-label="Website source on GitHub" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-github"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Committee</h4>
+        <ul>
+          <li><a href="../index.html#projects">Task committees</a></li>
+          <li><a href="../index.html#conferences">Events</a></li>
+          <li><a href="../index.html#meeting-notes">Meeting notes</a></li>
+          <li><a href="../index.html#leadership">People</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../Resources/data-sources.html">Data sources</a></li>
+          <li><a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" rel="noopener">EPA SWMM</a></li>
+          <li><a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" rel="noopener">Video library</a></li>
+          <li><a href="../index.html#resources">All resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:contact@ewri-stormwater.org">contact@ewri-stormwater.org</a></li>
+          <li><a href="../index.html#join">Join the committee</a></li>
+          <li><a href="https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute" target="_blank" rel="noopener">ASCE EWRI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ASCE EWRI Stormwater Modeling Committee</span>
+      <span>Maintained by committee volunteers. Not an official ASCE publication.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

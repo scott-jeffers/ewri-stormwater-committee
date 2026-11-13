@@ -1,33 +1,25 @@
-# Initiative Pages - Committee Member Guide
+# Initiative pages — guide for committee members
 
-## Quick Start
+Each task committee has its own page in this folder.
 
-Each Current Initiative has its own page. To add or update content:
+## Update an existing page
 
-1. **Edit an existing initiative page** — Open the `.html` file for your initiative (e.g., `teaching-tools.html`) and update the sections.
-2. **Add a new initiative** — Copy `template.html` to a new file (e.g., `my-initiative.html`), then search for `[Initiative Name]` and replace with your content.
+Open the `.html` file (e.g. `teaching-tools.html`) and edit the text. The sections are:
 
-## Template Structure
+| Section | What to put there |
+|---|---|
+| Hero (`page-hero`) | Title, one-sentence description, lead, status |
+| Overview | 2 short paragraphs + a "Focus areas" bullet list |
+| Recent updates | `<li><time>Month Year</time><p>…</p></li>` entries, **newest first** |
+| Milestones | `class="done"` (complete), `class="now"` (in progress), `class="next"` (planned) |
+| How to contribute | Who should get involved |
+| At a glance (sidebar) | Lead, members, status, last updated |
 
-The template includes these sections—fill in what applies:
+## Add a new initiative
 
-| Section | Purpose |
-|---------|---------|
-| **Overview** | 2–4 paragraphs describing the initiative, its goals, and who benefits |
-| **Recent Updates** | dated entries for progress, decisions, and next steps (newest first) |
-| **Key Milestones** | checkbox-style list of completed, in-progress, and planned items |
-| **How to Contribute** | how others can participate + contact for the initiative lead |
+1. Copy `template.html` to a new lowercase, hyphenated name, e.g. `open-data.html`.
+2. Replace every `[bracketed placeholder]`, and update `<title>` / description in the `<head>`. Remove the `noindex` meta tag.
+3. In `../index.html`, copy one of the `<a class="card reveal" …>` blocks in the `#projects` section and point it at your page.
+4. Add the page to `../sitemap.xml`.
 
-## Tips for Committee Members
-
-- **Be concise** — Short paragraphs and bullet points work best
-- **Update regularly** — Add an entry under Recent Updates after each meeting
-- **Use dates** — Format updates as "Month Year" (e.g., February 2026)
-- **Link out** — You can add links to external resources, papers, or tools
-- **Add images** — Place images in `../Images/` and reference with `../Images/filename.png`
-
-## File Naming
-
-Use lowercase with hyphens: `teaching-tools.html`, `design-storm-standards.html`
-
-When adding a new initiative, update `index.html` to add a card and link to your new page.
+Tips: keep paragraphs short, date every update, and link out to papers, repos and tools.

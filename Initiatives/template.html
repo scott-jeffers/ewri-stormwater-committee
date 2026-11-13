@@ -1,147 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CHANGE: Update title with your initiative name -->
-    <title>[Initiative Name] | ASCE EWRI Stormwater Modeling Committee</title>
-    
-    <link rel="icon" type="image/svg+xml" href="../Images/Icon_Converted.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        html { scroll-behavior: smooth; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Initiative Name] | Stormwater Modeling Committee · ASCE EWRI</title>
+  <meta name="description" content="[Short description of the initiative]">
+  <link rel="canonical" href="https://ewri-stormwater.org/Initiatives/template.html">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#061a2b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASCE EWRI Stormwater Modeling Committee">
+  <meta property="og:title" content="[Initiative Name] | Stormwater Modeling Committee · ASCE EWRI">
+  <meta property="og:description" content="[Short description of the initiative]">
+  <meta property="og:url" content="https://ewri-stormwater.org/Initiatives/template.html">
+  <meta property="og:image" content="https://ewri-stormwater.org/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/mark-simple.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preload" href="../assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-
-    <!-- NAVIGATION -->
-    <nav class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <a href="../index.html" class="flex items-center">
-                    <img src="../Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-10 mr-3 object-contain">
-                    <div>
-                        <span class="text-lg font-bold text-gray-900 block">ASCE EWRI</span>
-                        <span class="text-sm text-gray-600 block">Stormwater Modeling Committee</span>
-                    </div>
-                </a>
-                <a href="../index.html#projects" class="text-blue-700 font-semibold text-sm hover:text-blue-800">
-                    ← Back to Current Initiatives
-                </a>
-            </div>
-        </div>
+<body class="inner">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Stormwater Modeling Committee — home">
+        <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-name">Stormwater Modeling Committee</span>
+          <span class="brand-org">ASCE | EWRI</span>
+        </span>
+      </a>
+      <div class="nav-links">
+          <a href="../index.html#projects">Initiatives</a>
+          <a href="../index.html#resources">Resources</a>
+          <a href="../index.html#conferences">Events</a>
+          <a href="../index.html#meeting-notes">Meeting Notes</a>
+          <a href="../index.html#leadership">People</a>
+        <a class="btn btn-primary btn-sm" href="../index.html#join">Get involved</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-menu"></use></svg>
+      </button>
     </nav>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+      <a href="../index.html#projects">Initiatives</a>
+      <a href="../index.html#resources">Resources</a>
+      <a href="../index.html#conferences">Events</a>
+      <a href="../index.html#meeting-notes">Meeting Notes</a>
+      <a href="../index.html#leadership">People</a>
+      <a class="btn btn-primary" href="../index.html#join">Get involved</a>
+  </div>
+</header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        <!-- Breadcrumb -->
-        <nav class="text-sm text-gray-500 mb-8">
-            <a href="../index.html" class="hover:text-blue-600">Home</a>
-            <span class="mx-2">/</span>
-            <a href="../index.html#projects" class="hover:text-blue-600">Current Initiatives</a>
-            <span class="mx-2">/</span>
-            <span class="text-gray-900 font-medium">[Initiative Name]</span>
-        </nav>
+<!--
+  ===================================================================
+  NEW INITIATIVE TEMPLATE
+  1. Copy this file to a new name, e.g. my-initiative.html (lowercase, hyphens).
+  2. Replace every [bracketed placeholder] below. Delete sections you don't need.
+  3. Update <title> and the description <meta> tag in the <head>.
+  4. Add a card for it in index.html (search for "class=\"card reveal\"").
+  See Initiatives/README.md for details.
+  ===================================================================
+-->
+<main id="main">
+  <section class="page-hero">
+    <div class="wave-field" data-lines="30"></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../index.html#projects">Initiatives</a><span>/</span><span aria-current="page">[Initiative Name]</span></nav>
+      <span class="eyebrow light">Task committee</span>
+      <h1>[Initiative Name]</h1>
+      <p class="lead">[One-sentence description of what this initiative does and why it matters.]</p>
+      <div class="hero-chips">
+        <span class="chip">Lead: <b>[Lead name]</b></span>
+        <span class="chip">Status: <b>Active</b></span>
+        <span class="chip">[Formed Month Year]</span>
+      </div>
+    </div>
+  </section>
 
-        <!-- CHANGE: Update header with your initiative -->
-        <header class="mb-10">
-            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-4">Active</span>
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">[Initiative Name]</h1>
-            <p class="text-xl text-gray-600 leading-relaxed">
-                <!-- One-sentence summary of the initiative -->
-                [Brief overview—1–2 sentences describing the initiative's purpose and scope.]
-            </p>
-        </header>
+  <div class="page-body">
+    <div class="container layout">
+      <article class="prose">
+        <h2>Overview</h2>
+        <p class="lede">[Opening paragraph: the problem this initiative addresses.]</p>
+        <p>[Second paragraph: what the task committee is producing and who benefits.]</p>
 
-        <!-- Overview -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-circle-info text-blue-600 mr-3"></i>
-                Overview
-            </h2>
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <p class="text-gray-600 leading-relaxed">
-                    <!-- Describe the initiative in 2–4 paragraphs. What problem does it address? Who benefits? -->
-                    [Add your overview content here...]
-                </p>
-            </div>
-        </section>
+        <h3>Focus areas</h3>
+        <ul>
+          <li>[Focus area]</li>
+          <li>[Focus area]</li>
+        </ul>
 
-        <!-- Recent Updates -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-newspaper text-blue-600 mr-3"></i>
-                Recent Updates
-            </h2>
-            <div class="space-y-6">
-                <!-- Update 1 - Copy this block for each new update -->
-                <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                    <p class="text-sm font-semibold text-blue-600 mb-2">[Date, e.g., February 2026]</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        [Describe the update. What progress was made? Any decisions? Next steps?]
-                    </p>
-                </div>
-                <!-- Add more update blocks as needed -->
-            </div>
-        </section>
+        <h2>Recent updates</h2>
+        <!-- Newest first. Copy an <li> block for each update. -->
+        <ol class="timeline">
+          <li><time>[Month Year]</time><p>[What happened, what was decided, what is next.]</p></li>
+        </ol>
 
-        <!-- Key Milestones -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-flag text-blue-600 mr-3"></i>
-                Key Milestones
-            </h2>
-            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-check text-green-600 mt-1 mr-3"></i>
-                        <span>[Completed milestone]</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-solid fa-spinner text-blue-600 mt-1 mr-3"></i>
-                        <span>[In progress]</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa-regular fa-circle text-gray-400 mt-1 mr-3"></i>
-                        <span>[Planned]</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h2>Milestones</h2>
+        <!-- class="done" = complete, class="now" = in progress, class="next" = planned -->
+        <ul class="milestones">
+          <li class="done"><span class="status"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-check"></use></svg></span>[Completed milestone]<span class="tag">Complete</span></li>
+          <li class="now"><span class="status"></span>[Current milestone]<span class="tag">In progress</span></li>
+          <li class="next"><span class="status"></span>[Planned milestone]<span class="tag">Planned</span></li>
+        </ul>
 
-        <!-- How to Contribute -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <i class="fa-solid fa-handshake text-blue-600 mr-3"></i>
-                How to Contribute
-            </h2>
-            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    [Describe how committee members can get involved. Include contact info for the initiative lead.]
-                </p>
-                <a href="mailto:contact@example.com" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800">
-                    <i class="fa-solid fa-envelope mr-2"></i>
-                    Contact the Initiative Lead
-                </a>
-            </div>
-        </section>
-
-        <div class="pt-8 border-t border-gray-200">
-            <a href="../index.html#projects" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                Back to Current Initiatives
-            </a>
+        <div class="callout">
+          <h2>How to contribute</h2>
+          <p>[Who should get involved and how.]</p>
+          <a class="btn btn-primary" href="mailto:contact@ewri-stormwater.org">Contact the task committee</a>
         </div>
-    </main>
+      </article>
 
-    <footer class="bg-gray-900 text-white py-8 mt-16">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400 text-sm">ASCE EWRI Stormwater Modeling Committee</p>
-            <a href="../index.html" class="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block">Return to Home</a>
+      <aside class="aside">
+        <div class="panel">
+          <h3>At a glance</h3>
+          <dl>
+            <div><dt>Lead</dt><dd>[Lead name]</dd></div>
+            <div><dt>With</dt><dd>[Member]</dd><dd>[Member]</dd></div>
+            <div><dt>Status</dt><dd>Active</dd></div>
+            <div><dt>Last updated</dt><dd>[Month Year]</dd></div>
+          </dl>
         </div>
-    </footer>
+      </aside>
+    </div>
+  </div>
+</main>
+<div class="footer-rule" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html">
+          <img src="../assets/img/mark-simple.svg" alt="" width="40" height="40">
+          <span class="brand-text">
+            <span class="brand-name">Stormwater Modeling Committee</span>
+            <span class="brand-org">ASCE | EWRI</span>
+          </span>
+        </a>
+        <p>A technical committee of the Urban Water Resources Research Council within the Environmental &amp; Water Resources Institute (EWRI) of the American Society of Civil Engineers.</p>
+        <div class="socials">
+          <a href="mailto:contact@ewri-stormwater.org" aria-label="Email the committee"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mail"></use></svg></a>
+          <a href="https://www.youtube.com/@StormwaterModelingEWRI" aria-label="YouTube channel" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-youtube"></use></svg></a>
+          <a href="https://github.com/scott-jeffers/ewri-stormwater-committee" aria-label="Website source on GitHub" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-github"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Committee</h4>
+        <ul>
+          <li><a href="../index.html#projects">Task committees</a></li>
+          <li><a href="../index.html#conferences">Events</a></li>
+          <li><a href="../index.html#meeting-notes">Meeting notes</a></li>
+          <li><a href="../index.html#leadership">People</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../Resources/data-sources.html">Data sources</a></li>
+          <li><a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" rel="noopener">EPA SWMM</a></li>
+          <li><a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" rel="noopener">Video library</a></li>
+          <li><a href="../index.html#resources">All resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:contact@ewri-stormwater.org">contact@ewri-stormwater.org</a></li>
+          <li><a href="../index.html#join">Join the committee</a></li>
+          <li><a href="https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute" target="_blank" rel="noopener">ASCE EWRI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ASCE EWRI Stormwater Modeling Committee</span>
+      <span>Maintained by committee volunteers. Not an official ASCE publication.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

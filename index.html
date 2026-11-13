@@ -1,738 +1,533 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASCE EWRI Stormwater Modeling Committee</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="Images/Icon_Converted.svg">
-    <link rel="apple-touch-icon" href="Images/Icon_Converted.svg">
-    
-    <!-- Tailwind CSS (via CDN for immediate development) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stormwater Modeling Committee · ASCE EWRI</title>
+  <meta name="description" content="The ASCE EWRI Stormwater Modeling Committee brings together engineers, researchers and educators to advance best practices, open resources and tools for stormwater modeling.">
+  <link rel="canonical" href="https://ewri-stormwater.org/">
+  <meta name="theme-color" content="#061a2b">
 
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary-blue: #0A4A7A;
-            --secondary-blue: #1E6FA8;
-            --accent-blue: #2B8FD9;
-            --dark-gray: #1F2937;
-            --medium-gray: #4B5563;
-            --light-gray: #F3F4F6;
-        }
-        
-        body { 
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.01em;
-        }
-        
-        /* Smooth scrolling for anchor links */
-        html { scroll-behavior: smooth; }
-        
-        /* Professional navigation */
-        nav {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        
-        /* Modern card hover effects */
-        .card-modern {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-        }
-        
-        .card-modern:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            border-color: rgba(43, 143, 217, 0.2);
-        }
-        
-        /* Professional gradient backgrounds */
-        .gradient-professional {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .gradient-water {
-            background: linear-gradient(135deg, #0A4A7A 0%, #1E6FA8 50%, #2B8FD9 100%);
-        }
-        
-        /* Modern button styles */
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Accordion animations */
-        details summary {
-            list-style: none;
-        }
-        details summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        details .accordion-content {
-            animation: slideDown 0.3s ease-out;
-        }
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Professional section dividers */
-        .section-divider {
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
-            margin: 4rem 0;
-        }
-        
-        /* Modern text shadows */
-        .text-shadow-professional {
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Professional icon containers */
-        .icon-container {
-            width: 56px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            background: linear-gradient(135deg, rgba(43, 143, 217, 0.1) 0%, rgba(30, 111, 168, 0.1) 100%);
-        }
-    </style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ASCE EWRI Stormwater Modeling Committee">
+  <meta property="og:title" content="Stormwater Modeling Committee · ASCE EWRI">
+  <meta property="og:description" content="The ASCE EWRI Stormwater Modeling Committee brings together engineers, researchers and educators to advance best practices, open resources and tools for stormwater modeling.">
+  <meta property="og:url" content="https://ewri-stormwater.org/">
+  <meta property="og:image" content="https://ewri-stormwater.org/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark-simple.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-
-    <!-- NAVIGATION -->
-    <nav class="bg-white/98 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <!-- Logo / Brand -->
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex items-center group">
-                        <img src="Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Stormwater Modeling Committee Logo" class="h-10 sm:h-12 mr-2 sm:mr-3 transition-transform duration-300 group-hover:scale-105 object-contain flex-shrink-0">
-                        <div class="min-w-0">
-                            <span class="text-base sm:text-xl font-bold text-gray-900 tracking-tight block leading-tight truncate">
-                                ASCE EWRI
-                            </span>
-                            <span class="text-xs sm:text-sm font-medium text-gray-600 block leading-tight max-w-[140px] sm:max-w-none truncate">
-                                Stormwater Modeling Committee
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-1 items-center">
-                    <a href="#projects" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Projects</a>
-                    <a href="#resources" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Resources</a>
-                    <a href="#conferences" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Conferences</a>
-                    <a href="#meeting-notes" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Meeting Notes</a>
-                    <a href="#leadership" class="px-4 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm">Team</a>
-                    <a href="#join" class="ml-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-blue-700 to-blue-800 text-white hover:from-blue-800 hover:to-blue-900 transition-all duration-200 font-semibold text-sm shadow-md hover:shadow-lg">Get Involved</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" type="button" class="md:hidden inline-flex items-center justify-center p-3 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 transition-colors min-w-[44px] min-h-[44px]" aria-label="Open menu" aria-expanded="false">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-md">
-            <div class="px-4 py-4 space-y-1">
-                <a href="#projects" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Projects</a>
-                <a href="#resources" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Resources</a>
-                <a href="#conferences" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Conferences</a>
-                <a href="#meeting-notes" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Meeting Notes</a>
-                <a href="#leadership" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-700 font-medium">Team</a>
-                <a href="#join" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-blue-800 text-white text-center font-semibold mt-2">Get Involved</a>
-            </div>
-        </div>
+<body class="home">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header on-dark">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Stormwater Modeling Committee — home">
+        <img src="assets/img/mark-simple.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <span class="brand-name">Stormwater Modeling Committee</span>
+          <span class="brand-org">ASCE | EWRI</span>
+        </span>
+      </a>
+      <div class="nav-links">
+          <a href="#projects">Initiatives</a>
+          <a href="#resources">Resources</a>
+          <a href="#conferences">Events</a>
+          <a href="#meeting-notes">Meeting Notes</a>
+          <a href="#leadership">People</a>
+        <a class="btn btn-primary btn-sm" href="#join">Get involved</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-menu"></use></svg>
+      </button>
     </nav>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+      <a href="#projects">Initiatives</a>
+      <a href="#resources">Resources</a>
+      <a href="#conferences">Events</a>
+      <a href="#meeting-notes">Meeting Notes</a>
+      <a href="#leadership">People</a>
+      <a class="btn btn-primary" href="#join">Get involved</a>
+  </div>
+</header>
 
-    <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            var btn = this;
-            var icon = btn.querySelector('i');
-            menu.classList.toggle('hidden');
-            btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-xmark');
-        });
-        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-                document.getElementById('mobile-menu-btn').setAttribute('aria-expanded', 'false');
-                document.getElementById('mobile-menu-btn').querySelector('i').classList.add('fa-bars');
-                document.getElementById('mobile-menu-btn').querySelector('i').classList.remove('fa-xmark');
-            });
-        });
-    </script>
-
-    <!-- HERO SECTION -->
-    <header class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="Images/Banner 1 (1).png" alt="Background" class="w-full h-full object-cover">
+<main id="main">
+  <section class="hero on-dark">
+    <div class="wave-field" data-lines="38" data-animate></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="eyebrow light">ASCE · EWRI<span class="hide-sm"> · Urban Water Resources Research Council</span></span>
+        <h1>Advancing the practice of <span class="gradient-text">stormwater modeling.</span></h1>
+        <p class="lead">We bring together engineers, researchers, software developers and educators to define best practices, share open resources and build the next generation of tools that communities rely on to manage stormwater.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#join">Get involved <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></a>
+          <a class="btn btn-ghost-light" href="#projects">Explore our work</a>
         </div>
-        <div class="absolute inset-0 bg-white/30"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 tracking-tight leading-tight drop-shadow-sm">
-                    Advancing <span class="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">Stormwater Modeling</span>
-                </h1>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-800 leading-relaxed">
-                    We bring together industry experts, researchers, and practitioners to address the complex challenges of stormwater management. By defining best practices and fostering innovation, we aim to enhance the reliability and accuracy of stormwater models used worldwide.
-                </p>
-                
-                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
-                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
-                        <div class="icon-container mx-auto mb-3">
-                            <i class="fa-solid fa-users text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="font-bold text-base text-gray-900 mb-1">Collaboration</h3>
-                        <p class="text-gray-600 text-sm">Connecting professionals across the industry.</p>
-                    </div>
-                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
-                        <div class="icon-container mx-auto mb-3">
-                            <i class="fa-solid fa-graduation-cap text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="font-bold text-base text-gray-900 mb-1">Education</h3>
-                        <p class="text-gray-600 text-sm">Publishing guidelines and hosting workshops.</p>
-                    </div>
-                    <div class="bg-white/85 backdrop-blur-sm rounded-xl p-5 shadow-md border border-gray-100 card-modern">
-                        <div class="icon-container mx-auto mb-3">
-                            <i class="fa-solid fa-lightbulb text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="font-bold text-base text-gray-900 mb-1">Innovation</h3>
-                        <p class="text-gray-600 text-sm">Advancing state-of-the-art modeling techniques.</p>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row justify-center gap-3">
-                    <a href="#projects" class="px-7 py-3 text-base font-semibold rounded-lg text-white btn-primary">
-                        View Our Work
-                    </a>
-                    <a href="#resources" class="px-7 py-3 border-2 border-gray-300 text-base font-semibold rounded-lg text-gray-700 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 shadow-sm">
-                        Explore Resources
-                    </a>
-                </div>
-            </div>
+        <div class="hero-meta">
+          <div><strong>40+</strong><span>committee members</span></div>
+          <div><strong>4</strong><span>active task committees</span></div>
+          <div><strong>Tool-neutral</strong><span>open to every platform</span></div>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-
-
-    <!-- PROJECTS / COMMITTEES -->
-    <section id="projects" class="py-14 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">Current Initiatives</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Leading the industry through innovative research and standardized practices</p>
-            </div>
-            <div class="grid gap-6 md:grid-cols-2">
-                
-                <!-- Project Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
-                    <div class="flex items-center mb-3">
-                        <div class="icon-container mr-4" style="width:44px;height:44px;">
-                            <i class="fa-solid fa-chalkboard-teacher text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900">Teaching Tools</h3>
-                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Developing educational resources and interactive tools to support stormwater modeling instruction and training.
-                    </p>
-                    <a href="Initiatives/teaching-tools.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
-                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
-                    <div class="flex items-center mb-3">
-                        <div class="icon-container mr-4" style="width:44px;height:44px;">
-                            <i class="fa-solid fa-cloud-rain text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900">Design Storm Standards</h3>
-                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Establishing standardized approaches for design storm selection and application in stormwater modeling.
-                    </p>
-                    <a href="Initiatives/design-storm-standards.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
-                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
-                    <div class="flex items-center mb-3">
-                        <div class="icon-container mr-4" style="width:44px;height:44px;">
-                            <i class="fa-solid fa-satellite-dish text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900">Real-Time Systems</h3>
-                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Advancing real-time monitoring and control systems for stormwater management and flood mitigation.
-                    </p>
-                    <a href="Initiatives/real-time-systems.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
-                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
-                    <div class="flex items-center mb-3">
-                        <div class="icon-container mr-4" style="width:44px;height:44px;">
-                            <i class="fa-solid fa-vial text-blue-700 text-lg"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900">SWMM Testing Protocol</h3>
-                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full ml-auto">Active</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Developing testing protocols and validation procedures for SWMM model accuracy and reliability.
-                    </p>
-                    <a href="Initiatives/swmm-testing-protocol.html" class="inline-flex items-center text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors">
-                        Read Update <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-
-            </div>
+  <section class="section" id="about">
+    <div class="container mission">
+      <div class="reveal">
+        <span class="eyebrow">Who we are</span>
+        <p class="mission-statement">A <em>tool-neutral</em> community of practice for everyone who models urban water.</p>
+        <p>The Stormwater Modeling Committee is a technical committee of the Urban Water Resources Research Council (UWRRC) within ASCE’s Environmental &amp; Water Resources Institute. Our members work across consulting firms, universities, public agencies and software developers.</p>
+        <p>We welcome every modeling platform, from SWMM and HEC-RAS to InfoWorks ICM and HydroCAD. What unites us is a commitment to models that are transparent, reproducible and worthy of the decisions built on them.</p>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar">
+          <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-users"></use></svg></span>
+          <div><h3>Collaboration</h3><p>Connecting practitioners, academics, regulators and developers to work on shared problems through focused task committees.</p></div>
         </div>
-    </section>
-
-    <!-- RESOURCES SECTION -->
-    <section id="resources" class="py-14 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Knowledge Hub</span>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
-                    Educational Resources
-                </h2>
-                <p class="max-w-3xl mx-auto text-gray-600">
-                    A collection of educational resources from industry leaders and contributors.
-                </p>
-            </div>
-
-            <!-- Educational Resources -->
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
-                <h3 class="text-2xl font-bold text-gray-900 mb-5">SWMM & Modeling Resources</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" class="relative group rounded-xl overflow-hidden h-36 bg-cover bg-center hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-200" style="background-image: url('Learning/EPA-swmm.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/40 group-hover:from-black/90 group-hover:via-black/70 group-hover:to-black/50 transition-all duration-300"></div>
-                        <div class="relative h-full flex flex-col justify-end p-5 text-white">
-                            <p class="font-bold text-lg mb-1.5 group-hover:translate-x-1 transition-transform duration-200">EPA SWMM Website</p>
-                            <p class="text-xs text-gray-300 leading-relaxed">epa.gov/water-research/storm-water-management-model-swmm</p>
-                        </div>
-                    </a>
-                    <a href="https://www.openswmm.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/openswmm_.png'); background-color: #1e40af;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">OpenSWMM</p>
-                            <p class="text-sm text-gray-200">openswmm.org</p>
-                        </div>
-                    </a>
-                    <a href="https://www.pyswmm.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/pyswmm.jpg');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">PySWMM</p>
-                            <p class="text-sm text-gray-200">pyswmm.org</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/USEPA/Stormwater-Management-Model" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/github.png'); background-color: #1f2937;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">SWMM GitHub</p>
-                            <p class="text-sm text-gray-200">github.com/USEPA/Stormwater-Management-Model</p>
-                        </div>
-                    </a>
-                    <a href="https://docs.bentley.com/LiveContent/web/Bentley%20SewerGEMS%20SS5-v2/en/GUID-34B7A754-7CE9-4BD6-A93C-F6E1059D9929.html" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/bentley.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">Bentley SWMM Pages</p>
-                            <p class="text-sm text-gray-200">Bentley SewerGEMS Documentation</p>
-                        </div>
-                    </a>
-                    <a href="https://mel-meng-pe.medium.com/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/mel.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">Mel Meng's Medium Page</p>
-                            <p class="text-sm text-gray-200">mel-meng-pe.medium.com</p>
-                        </div>
-                    </a>
-                    <a href="http://www.dynsystem.com/netstorm/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/netstorm.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">NetSTORM</p>
-                            <p class="text-sm text-gray-200">dynsystem.com/netstorm</p>
-                        </div>
-                    </a>
-                    <a href="https://www.youtube.com/@StormwaterModelingEWRI/playlists?view=1&sort=lad&flow=grid" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-gradient-to-br from-red-600 to-red-800 hover:scale-105 transition-transform duration-300 shadow-md flex items-center justify-center">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20"></div>
-                        <div class="relative text-center text-white p-4">
-                            <i class="fa-brands fa-youtube text-4xl mb-2 block"></i>
-                            <p class="font-bold text-lg">Educational Videos</p>
-                            <p class="text-sm text-gray-200">YouTube Channel - Stormwater Modeling EWRI</p>
-                        </div>
-                    </a>
-                    <a href="https://swmm5.org/" target="_blank" class="relative group rounded-lg overflow-hidden h-32 bg-cover bg-center hover:scale-105 transition-transform duration-300 shadow-md" style="background-image: url('Learning/bob.png');">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
-                        <div class="relative h-full flex flex-col justify-end p-4 text-white">
-                            <p class="font-bold text-lg mb-1">SWMM5.org - Bob Dickinson</p>
-                            <p class="text-sm text-gray-200">Free SWMM5 tutorials, Ruby scripts for ICM, and interactive modeling tools</p>
-                        </div>
-                    </a>
-                    <a href="Resources/data-sources.html" class="relative group rounded-lg overflow-hidden h-32 bg-gradient-to-br from-blue-700 to-blue-900 hover:scale-105 transition-transform duration-300 shadow-md flex items-center justify-center">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20"></div>
-                        <div class="relative text-center text-white p-4">
-                            <i class="fa-solid fa-database text-5xl mb-2 block"></i>
-                            <p class="font-bold text-lg">Data Sources for Modeling</p>
-                            <p class="text-sm text-gray-200">Precipitation, topography, parameters & more</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="pillar">
+          <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"></use></svg></span>
+          <div><h3>Education</h3><p>Publishing guidance, recording tutorials and running workshops that lower the barrier to entry and raise the bar for practice.</p></div>
         </div>
-    </section>
-
-    <!-- CONFERENCES SECTION -->
-    <section id="conferences" class="py-14 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Events</span>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">Upcoming Conferences</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Where to find us and present your work</p>
-            </div>
-
-            <div class="bg-gray-50 rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 space-y-6">
-                <div class="flex gap-4 border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                    <div class="icon-container flex-shrink-0" style="width:48px;height:48px;">
-                        <i class="fa-solid fa-globe text-teal-700 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">59th International Conference on Water Management Modeling</h3>
-                        <p class="text-gray-600 text-sm mb-2">Toronto, ON • Feb 25–27, 2026</p>
-                        <a href="https://www.icwmm.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.icwmm.org</a>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                    <div class="icon-container flex-shrink-0" style="width:48px;height:48px;">
-                        <i class="fa-solid fa-leaf text-green-700 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">International LID Conference</h3>
-                        <p class="text-gray-600 text-sm mb-2">Jacksonville, FL • March 1–4</p>
-                        <a href="https://www.lidconference.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.lidconference.org</a>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                    <div class="icon-container flex-shrink-0" style="width:48px;height:48px;">
-                        <i class="fa-solid fa-users-line text-blue-700 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">EWRI Congress</h3>
-                        <p class="text-gray-600 text-sm mb-2">Mobile, AL • April 26–29</p>
-                        <p class="text-blue-700 text-sm font-medium mb-2">Special technical session: "The Open SWMM Initiative"</p>
-                        <a href="https://www.ewricongress.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.ewricongress.org</a>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                    <div class="icon-container flex-shrink-0" style="width:48px;height:48px;">
-                        <i class="fa-solid fa-droplet text-cyan-700 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">Watershed Management Conference</h3>
-                        <p class="text-gray-600 text-sm mb-2">Reston, VA • August 9–12</p>
-                        <a href="https://www.watershedmanagementconference.org/" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">www.watershedmanagementconference.org</a>
-                    </div>
-                </div>
-
-                <div class="flex gap-4">
-                    <div class="icon-container flex-shrink-0" style="width:48px;height:48px;">
-                        <i class="fa-solid fa-landmark text-indigo-700 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">ASCE 2027 (includes EWRI Congress)</h3>
-                        <p class="text-gray-600 text-sm mb-2">Philadelphia, PA • March 1–5, 2027</p>
-                        <p class="text-gray-600 text-sm mb-2">Call for content due March 4</p>
-                        <a href="https://experience.asce.org/program/call-for-content" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">experience.asce.org/program/call-for-content</a>
-                    </div>
-                </div>
-            </div>
+        <div class="pillar">
+          <span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-spark"></use></svg></span>
+          <div><h3>Innovation</h3><p>Advancing open engines, testing standards, real-time control and AI-assisted workflows that move the field forward.</p></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- MEETING NOTES SECTION -->
-    <section id="meeting-notes" class="py-14 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Committee Resources</span>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
-                    Meeting Notes
-                </h2>
-                <p class="max-w-3xl mx-auto text-gray-600">
-                    Access meeting notes and summaries from our committee meetings, generated with AI assistance.
-                </p>
-            </div>
-
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Meeting Notes Card -->
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 card-modern group">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-file-lines text-blue-700 text-xl"></i>
-                            </div>
-                            <span class="text-xs font-semibold text-green-600 bg-green-50 px-2.5 py-1 rounded-full">Latest</span>
-                        </div>
-                        <div class="mb-4">
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">February 12, 2026</h3>
-                            <p class="text-sm text-gray-500">Committee Meeting</p>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
-                            ASCE EWRI UWRRC Stormwater Modeling Committee meeting notes generated by Gemini AI.
-                        </p>
-                        <a href="MeetingNotes/2026-02-12-meeting-notes.html" target="_blank" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition-colors group-hover:translate-x-1 duration-200">
-                            View Notes <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <section class="section soft" id="projects">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">Current initiatives</span>
+          <h2>Task committees doing the work</h2>
         </div>
-    </section>
+        <p>Each initiative is led by committee volunteers and produces practical deliverables: standards, test suites, guidance and training. Every one of them welcomes new contributors.</p>
+      </div>
+      <div class="cards two">
+        <a class="card reveal" href="Initiatives/design-storm-standards.html">
+          <div class="card-top">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-rain"></use></svg></span>
+            <span class="chip green dot">Active</span>
+          </div>
+          <h3>Design Storm Standards</h3>
+          <p>Toward a national standard for design storms: shaping hyetographs that conform to NOAA Atlas 14/15 at every duration and retiring outdated SCS distributions.</p>
+          <div class="lead-by"><span>Led by <strong>Mitch Heineman</strong></span><span class="go"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span></div>
+        </a>
+        <a class="card reveal" href="Initiatives/swmm-testing-protocol.html">
+          <div class="card-top">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check-shield"></use></svg></span>
+            <span class="chip green dot">Active</span>
+          </div>
+          <h3>SWMM Testing Protocol</h3>
+          <p>A version-controlled benchmark suite any SWMM engine or fork can run to demonstrate it reproduces the reference hydrology and hydraulics.</p>
+          <div class="lead-by"><span>Led by <strong>Bryant McDonnell</strong></span><span class="go"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span></div>
+        </a>
+        <a class="card reveal" href="Initiatives/real-time-systems.html">
+          <div class="card-top">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-signal"></use></svg></span>
+            <span class="chip green dot">Active</span>
+          </div>
+          <h3>Real-Time Systems</h3>
+          <p>Guidance for coupling models with sensors, forecasts and control logic so stormwater infrastructure can respond during the storm, not after it.</p>
+          <div class="lead-by"><span>Led by <strong>Robert Dickinson</strong></span><span class="go"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span></div>
+        </a>
+        <a class="card reveal" href="Initiatives/teaching-tools.html">
+          <div class="card-top">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-teach"></use></svg></span>
+            <span class="chip green dot">Active</span>
+          </div>
+          <h3>Teaching Tools</h3>
+          <p>Open training material for the next generation of modelers: video tutorials, workshops, example models and an online SWMM reference manual.</p>
+          <div class="lead-by"><span>Led by <strong>Michael Gregory & Scott Jeffers</strong></span><span class="go"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- JOIN THE TEAM SECTION -->
-    <section id="join" class="py-14 bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-gray-50 rounded-2xl shadow-lg p-8 border border-gray-100">
-                <h2 class="text-3xl font-bold text-gray-900 mb-3 tracking-tight">Join the Team!</h2>
-                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
-                    Contribute to advancing stormwater modeling and join a community of industry-leading professionals and practitioners.
-                </p>
-                <a href="mailto:contact@example.com" class="inline-block px-8 py-3 text-base font-semibold rounded-lg text-white btn-primary">
-                    Get Involved
-                </a>
-            </div>
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">Knowledge hub</span>
+          <h2>Learning &amp; modeling resources</h2>
         </div>
-    </section>
+        <p>A curated set of references, software and learning material recommended by committee members.</p>
+      </div>
+      <div class="resource-grid">
+        <a class="resource reveal" href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-droplet"></use></svg></span>
+          <span>
+            <span class="resource-tag">Official</span>
+            <h3>EPA SWMM</h3>
+            <p>Downloads, manuals and release notes for the Storm Water Management Model.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://github.com/USEPA/Stormwater-Management-Model" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-code"></use></svg></span>
+          <span>
+            <span class="resource-tag">Source code</span>
+            <h3>SWMM on GitHub</h3>
+            <p>The USEPA reference source code for the SWMM computational engine.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://www.openswmm.org/" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg></span>
+          <span>
+            <span class="resource-tag">Community</span>
+            <h3>OpenSWMM</h3>
+            <p>Community hub for the open SWMM ecosystem: documentation, knowledge base and training.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://www.pyswmm.org/" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-code"></use></svg></span>
+          <span>
+            <span class="resource-tag">Python</span>
+            <h3>PySWMM</h3>
+            <p>Python interface to SWMM for scripting, automation and real-time control studies.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://swmm5.org/" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"></use></svg></span>
+          <span>
+            <span class="resource-tag">Tutorials</span>
+            <h3>SWMM5.org</h3>
+            <p>Robert Dickinson’s free SWMM5 tutorials, ICM Ruby scripts and interactive modeling tools.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://mel-meng-pe.medium.com/" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-file"></use></svg></span>
+          <span>
+            <span class="resource-tag">Articles</span>
+            <h3>Mel Meng on Medium</h3>
+            <p>Practical articles on hydraulic modeling, automation and modeling workflows.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="https://docs.bentley.com/LiveContent/web/Bentley%20SewerGEMS%20SS5-v2/en/GUID-34B7A754-7CE9-4BD6-A93C-F6E1059D9929.html" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-layers"></use></svg></span>
+          <span>
+            <span class="resource-tag">Documentation</span>
+            <h3>Bentley SewerGEMS SWMM</h3>
+            <p>Reference pages for the SWMM solver as implemented in Bentley SewerGEMS.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+        <a class="resource reveal" href="http://www.dynsystem.com/netstorm/" target="_blank" rel="noopener">
+          <span class="resource-logo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-rain"></use></svg></span>
+          <span>
+            <span class="resource-tag">Rainfall</span>
+            <h3>NetSTORM</h3>
+            <p>Rainfall analysis software for IDF statistics, event analysis and design storms.</p>
+          </span>
+          <span class="ext"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+      </div>
+      <div class="feature-band">
+        <a class="feature reveal" href="Resources/data-sources.html">
+          <div class="wave-field" data-lines="22"></div>
+          <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-database"></use></svg></span>
+          <h3>Data sources for modeling</h3>
+          <p>Where to find precipitation, flow, topography, land cover, soils and building data for your next model.</p>
+          <span class="btn btn-light btn-sm">Browse data sources <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span>
+        </a>
+        <a class="feature youtube reveal" href="https://www.youtube.com/@StormwaterModelingEWRI/playlists" target="_blank" rel="noopener">
+          <div class="wave-field" data-lines="22"></div>
+          <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-play"></use></svg></span>
+          <h3>Video library</h3>
+          <p>Talks, tutorials and Modeler Minute presentations from the committee on our YouTube channel.</p>
+          <span class="btn btn-light btn-sm">Watch on YouTube <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- TEAM & MEMBERS SECTION -->
-    <section id="leadership" class="py-14 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Committee Leadership -->
-            <div class="text-center mb-10">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-3">Our Team</span>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
-                    Committee Leadership
-                </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Experienced professionals leading the advancement of stormwater modeling</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-12">
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/erica.jpg" alt="Erica McKenzie" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Erica McKenzie</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Lead Chair</p>
-                    <p class="text-gray-500 text-xs">Ph.D. Associate Professor, Temple University</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/mike.jpg" alt="Mike Gregory" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Mike Gregory</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Vice Chair</p>
-                    <p class="text-gray-500 text-xs">Water Resources Engineer at CHI</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/scott-jeffers.jpg" alt="Scott Jeffers" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Scott Jeffers</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Secretary</p>
-                    <p class="text-gray-500 text-xs">President Anthropocene Engineering</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/dayton.jpg" alt="Dayton Marchese" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Dayton Marchese</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
-                    <p class="text-gray-500 text-xs">P.E. at OptiRTC</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/Sample.jpg" alt="David James Sample" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">David James Sample</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
-                    <p class="text-gray-500 text-xs">Ph.D., P.E., Professor at Virginia Tech</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/traver.jpg" alt="Robert Traver" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Robert Traver</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">Past Chair</p>
-                    <p class="text-gray-500 text-xs">Professor at Villanova University</p>
-                </div>
-                <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                    <img src="Members/shirley.jpg" alt="Shirley Clark" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                    <h3 class="text-base font-bold text-gray-900 mb-1">Shirley Clark</h3>
-                    <p class="text-blue-700 font-semibold text-xs mb-1">ASCE | EWRI President</p>
-                    <p class="text-gray-500 text-xs">Professor, Penn State Harrisburg</p>
-                </div>
-            </div>
-
-            <!-- Content Contributors -->
-            <div class="mt-12 mb-12">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Content Contributors</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                        <img src="Members/bob.jpg" alt="Robert (Bob) Dickinson" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                        <h4 class="font-bold text-base text-gray-900 mb-1">Robert (Bob) Dickinson</h4>
-                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
-                        <p class="text-gray-500 text-xs">Autodesk Water Technologist</p>
-                    </div>
-                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                        <img src="Members/mitch.jpg" alt="Mitch Heineman" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                        <h4 class="font-bold text-base text-gray-900 mb-1">Mitch Heineman</h4>
-                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
-                        <p class="text-gray-500 text-xs">Collection Systems Leader | CDM Smith</p>
-                    </div>
-                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center card-modern">
-                        <img src="Members/bryant.jpg" alt="Bryant McDonnell" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-3 border-blue-100 shadow-md">
-                        <h4 class="font-bold text-base text-gray-900 mb-1">Bryant McDonnell</h4>
-                        <p class="text-blue-700 text-xs font-semibold mb-1">Member</p>
-                        <p class="text-gray-500 text-xs">Principal, Hydroinformatics LLC</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Committee Members -->
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2 tracking-tight">
-                    Committee Members
-                </h2>
-                <p class="text-gray-600 text-sm">
-                    Reach out to join the team and contribute to the mission.
-                </p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-                    <div>David James Sample, Ph.D., P.E., BC.WRE, M.ASCE</div>
-                    <div>Dayton Marchese, P.E.</div>
-                    <div>Elie George Araj, P.E., C.Eng, BC.WRE, M.ASCE</div>
-                    <div>Tom Batroney, P.E., M.ASCE</div>
-                    <div>Azadeh Akhavan Bloorchian-Verschuyl, Ph.D., A.M.ASCE</div>
-                    <div>Angela Marie Brackbill, A.M.ASCE</div>
-                    <div>Robert Walter Carr, P.E., M.ASCE</div>
-                    <div>Daniel Christian, P.E., BC.WRE, M.ASCE</div>
-                    <div>Shirley E Clark, Ph.D., P.E., BC.WRE, F.EWRI, M.ASCE</div>
-                    <div>Robert Edgar Dickinson, Jr, EIT, A.M.ASCE</div>
-                    <div>Thomas Andrew Earles, M.ASCE</div>
-                    <div>Ali Ebrahimian, Ph.D.</div>
-                    <div>Elizabeth Anne Fassman-Beck, Ph.D., M.ASCE</div>
-                    <div>David Fortune</div>
-                    <div>Saki Handa, P.E., ENV SP, M.ASCE</div>
-                    <div>Mitchell Cary Heineman, P.E., BC.WRE, M.ASCE</div>
-                    <div>Ruth Ayn Hocker, P.E., R.Eng, BC.WRE, M.ASCE</div>
-                    <div>Ben R. Hodges</div>
-                    <div>Shawn Huang, Aff.M.ASCE</div>
-                    <div>Scott Jeffers</div>
-                    <div>Stephanie Johnson</div>
-                    <div>Bill Lucas</div>
-                    <div>Erica R. McKenzie</div>
-                    <div>Gary Dean Martens, P.E., M.ASCE</div>
-                    <div>Arash Massoudieh, Aff.M.ASCE</div>
-                    <div>Daniel E Medina, Ph.D., P.E., M.ASCE</div>
-                    <div>Thomas Patrick O'Connor, P.E., F.ASCE</div>
-                    <div>Linda D. Pechacek, P.E., F.EWRI, M.ASCE</div>
-                    <div>Aaron Poresky, P.E.</div>
-                    <div>Marcus Mahan Quigley, P.E., BC.WRE, M.ASCE</div>
-                    <div>Christopher J Ranck, P.E., BCEE, ENV SP, BC.WRE</div>
-                    <div>Robert John Ryan, Ph.D., P.E., BC.WRE, M.ASCE</div>
-                    <div>K. Majid Sadeghi, Ph.D., P.E., BC.WRE, M.ASCE</div>
-                    <div>Kody Schouten, M.Eng, P.E., CFM</div>
-                    <div>Aly Salem, S.M.ASCE</div>
-                    <div>Michelle Simon, Ph.D., P.E.</div>
-                    <div>David William Spelman, Ph.D., P.E., M.ASCE</div>
-                    <div>Scott Struck, Ph.D., F.EWRI, M.ASCE</div>
-                    <div>Robert Guy Traver, Ph.D., P.E., BC.WRE, F.EWRI, F.ASCE</div>
-                    <div>Bridget Wadzuk, Ph.D., A.M.ASCE</div>
-                    <div>Thomas Michael Walski, Ph.D., P.E., F.EWRI, F.ASCE</div>
-                    <div>K Zhang</div>
-                </div>
-            </div>
+  <section class="section dark on-dark" id="conferences">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">Events</span>
+          <h2>Where to find us</h2>
         </div>
-    </section>
+        <p>Conferences where committee members present, convene and host sessions. Come say hello, or bring your own work.</p>
+      </div>
+      <div class="events">
+        <article class="event reveal">
+          <div class="event-date"><span class="m">Feb 2027</span><span class="d">24 – 26</span></div>
+          <div>
+            <h3>International Conference on Water Management Modeling (ICWMM)</h3>
+            <div class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-pin"></use></svg>Toronto, Ontario</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg>icwmm.org</span></div>
+            
+          </div>
+          <a class="btn btn-ghost-light btn-sm" href="https://www.icwmm.org/" target="_blank" rel="noopener">Event site <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></a>
+        </article>
+        <article class="event reveal">
+          <div class="event-date"><span class="m">Mar 2027</span><span class="d">1 – 5</span></div>
+          <div>
+            <h3>ASCE2027: The Infrastructure & Engineering Experience</h3>
+            <div class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-pin"></use></svg>Philadelphia, Pennsylvania</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg>experience.asce.org</span></div>
+            <span class="event-note"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"></use></svg>Home of the 2027 EWRI Congress</span>
+          </div>
+          <a class="btn btn-ghost-light btn-sm" href="https://experience.asce.org/" target="_blank" rel="noopener">Event site <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></a>
+        </article>
+        <article class="event reveal">
+          <div class="event-date"><span class="m">Jun 2027</span><span class="d">6 – 11</span></div>
+          <div>
+            <h3>17th International Conference on Urban Drainage (ICUD)</h3>
+            <div class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-pin"></use></svg>Ningbo, China</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-globe"></use></svg>iahr.org</span></div>
+            
+          </div>
+          <a class="btn btn-ghost-light btn-sm" href="https://www.iahr.org/index/detail/2402" target="_blank" rel="noopener">Event site <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></a>
+        </article>
+      </div>
+      <p class="past-events reveal"><strong>Recently:</strong> 59th ICWMM, Toronto (Feb 2026) · International LID Conference, Jacksonville (Mar 2026) · EWRI Congress, Mobile, AL (Apr 2026), including our special session “The Open SWMM Initiative” · Watershed Management Conference (Aug 2026).</p>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-10 border-t border-gray-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center mb-6">
-                        <img src="Images/Icon_Final_Transparent.svg" alt="ASCE EWRI Logo" class="h-12 mr-3 brightness-150 opacity-95 object-contain">
-                        <div>
-                            <h4 class="text-lg font-bold">ASCE EWRI</h4>
-                            <p class="text-sm text-gray-400">Stormwater Modeling</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 leading-relaxed text-sm">
-                        Environmental & Water Resources Institute<br>
-                        Stormwater Modeling Committee
-                    </p>
-                </div>
-                <div>
-                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
-                    <ul class="space-y-2">
-                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors text-sm">Current Initiatives</a></li>
-                        <li><a href="#resources" class="text-gray-400 hover:text-white transition-colors text-sm">Resources</a></li>
-                        <li><a href="#meeting-notes" class="text-gray-400 hover:text-white transition-colors text-sm">Meeting Notes</a></li>
-                        <li><a href="#conferences" class="text-gray-400 hover:text-white transition-colors text-sm">Conferences</a></li>
-                        <li><a href="#leadership" class="text-gray-400 hover:text-white transition-colors text-sm">Team</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-lg font-semibold mb-4">Contact</h5>
-                    <p class="text-gray-400 mb-4 text-sm">Contact Committee Leadership</p>
-                    <a href="mailto:contact@example.com" class="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">contact@example.org</a>
-                    <div class="mt-6 flex space-x-4">
-                        <a href="https://www.linkedin.com/in/scott-jeffers-pe-phd-a7638717/" target="_blank" class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
-                            <i class="fa-brands fa-linkedin text-lg"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" class="w-10 h-10 bg-gray-700 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
-                            <i class="fa-brands fa-youtube text-lg"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 pt-8 text-center">
-                <p class="text-gray-500 text-sm">© 2026 ASCE EWRI Stormwater Modeling Committee. All rights reserved.</p>
-            </div>
+  <section class="section soft" id="meeting-notes">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">Committee record</span>
+          <h2>Meeting notes</h2>
         </div>
-    </footer>
+        <p>Summaries, decisions and action items from our committee meetings, prepared with AI assistance.</p>
+      </div>
+      <div class="notes-list">
+        <a class="note-row reveal" href="MeetingNotes/2026-02-12-meeting-notes.html">
+          <span class="note-date"><small>Feb</small><b>12</b></span>
+          <span>
+            <h3>Committee meeting · February 12, 2026</h3>
+            <p>New officers, a tool-neutral charter, and three new task committees: design storms, SWMM testing and teaching tools.</p>
+          </span>
+          <span class="go"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section class="section" id="leadership">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">People</span>
+          <h2>The committee</h2>
+        </div>
+        <p>Committee officers organize meetings and support the task committees. The direction of the committee comes from its members.</p>
+      </div>
+
+      <div class="leaders officers">
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/erica.jpg" alt="Portrait of Erica McKenzie" loading="lazy" width="320" height="320"></div>
+          <span class="role">Chair</span>
+          <h3>Erica McKenzie</h3>
+          <p>Ph.D., Associate Professor, Temple University</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/mike.jpg" alt="Portrait of Michael Gregory" loading="lazy" width="320" height="320"></div>
+          <span class="role">Vice Chair</span>
+          <h3>Michael Gregory</h3>
+          <p>Water Resources Engineer, CHI</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/scott-jeffers.jpg" alt="Portrait of Scott Jeffers" loading="lazy" width="320" height="320"></div>
+          <span class="role">Secretary</span>
+          <h3>Scott Jeffers</h3>
+          <p>President, Anthropocene Engineering</p>
+        </article>
+      </div>
+
+      <div class="sub-head reveal"><h3>Past chairs &amp; advisors</h3></div>
+      <div class="leaders">
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/dayton.jpg" alt="Portrait of Dayton Marchese" loading="lazy" width="320" height="320"></div>
+          <span class="role">Past Chair</span>
+          <h3>Dayton Marchese</h3>
+          <p>P.E., OptiRTC</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/sample.jpg" alt="Portrait of David J. Sample" loading="lazy" width="320" height="320"></div>
+          <span class="role">Past Chair</span>
+          <h3>David J. Sample</h3>
+          <p>Ph.D., P.E., Professor, Virginia Tech</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/traver.jpg" alt="Portrait of Robert Traver" loading="lazy" width="320" height="320"></div>
+          <span class="role">Past Chair</span>
+          <h3>Robert Traver</h3>
+          <p>Ph.D., P.E., Professor, Villanova University</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/shirley.jpg" alt="Portrait of Shirley Clark" loading="lazy" width="320" height="320"></div>
+          <span class="role">Past President, ASCE EWRI</span>
+          <h3>Shirley Clark</h3>
+          <p>Ph.D., P.E., Distinguished Professor, Penn State Harrisburg</p>
+        </article>
+      </div>
+
+      <div class="sub-head reveal"><h3>Content contributors</h3></div>
+      <div class="leaders">
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/bob.jpg" alt="Portrait of Robert (Bob) Dickinson" loading="lazy" width="320" height="320"></div>
+          <span class="role">Content contributor</span>
+          <h3>Robert (Bob) Dickinson</h3>
+          <p>Water Technologist, Autodesk</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/mitch.jpg" alt="Portrait of Mitch Heineman" loading="lazy" width="320" height="320"></div>
+          <span class="role">Content contributor</span>
+          <h3>Mitch Heineman</h3>
+          <p>Collection Systems Leader, CDM Smith</p>
+        </article>
+        <article class="person reveal">
+          <div class="person-photo"><img src="assets/img/members/bryant.jpg" alt="Portrait of Bryant McDonnell" loading="lazy" width="320" height="320"></div>
+          <span class="role">Content contributor</span>
+          <h3>Bryant McDonnell</h3>
+          <p>Principal, Hydroinformatics LLC</p>
+        </article>
+      </div>
+
+      <div class="sub-head reveal"><h3>Committee members</h3><span>44 members</span></div>
+      <ul class="roster reveal">
+          <li>Elie George Araj<span>P.E., C.Eng, BC.WRE, M.ASCE</span></li>
+          <li>Tom Batroney<span>P.E., M.ASCE</span></li>
+          <li>Azadeh Akhavan Bloorchian-Verschuyl<span>Ph.D., A.M.ASCE</span></li>
+          <li>Angela Marie Brackbill<span>A.M.ASCE</span></li>
+          <li>Robert Walter Carr<span>P.E., M.ASCE</span></li>
+          <li>Daniel Christian<span>P.E., BC.WRE, M.ASCE</span></li>
+          <li>Shirley E. Clark<span>Ph.D., P.E., BC.WRE, F.EWRI, F.ASCE</span></li>
+          <li>Robert Edgar Dickinson, Jr.<span>EIT, A.M.ASCE</span></li>
+          <li>Thomas Andrew Earles<span>M.ASCE</span></li>
+          <li>Ali Ebrahimian<span>Ph.D.</span></li>
+          <li>Elizabeth Anne Fassman-Beck<span>Ph.D., M.ASCE</span></li>
+          <li>David Fortune</li>
+          <li>Michael Gregory</li>
+          <li>Saki Handa<span>P.E., ENV SP, M.ASCE</span></li>
+          <li>Mitchell Cary Heineman<span>P.E., BC.WRE, M.ASCE</span></li>
+          <li>Ruth Ayn Hocker<span>P.E., R.Eng, BC.WRE, M.ASCE</span></li>
+          <li>Ben R. Hodges</li>
+          <li>Shawn Huang<span>Aff.M.ASCE</span></li>
+          <li>Scott Jeffers</li>
+          <li>Stephanie Johnson</li>
+          <li>Bill Lucas</li>
+          <li>Dayton Marchese<span>P.E.</span></li>
+          <li>Gary Dean Martens<span>P.E., M.ASCE</span></li>
+          <li>Arash Massoudieh<span>Aff.M.ASCE</span></li>
+          <li>Bryant McDonnell</li>
+          <li>Erica R. McKenzie</li>
+          <li>Daniel E. Medina<span>Ph.D., P.E., M.ASCE</span></li>
+          <li>Thomas Patrick O'Connor<span>P.E., F.ASCE</span></li>
+          <li>Linda D. Pechacek<span>P.E., F.EWRI, M.ASCE</span></li>
+          <li>Aaron Poresky<span>P.E.</span></li>
+          <li>Marcus Mahan Quigley<span>P.E., BC.WRE, M.ASCE</span></li>
+          <li>Christopher J. Ranck<span>P.E., BCEE, ENV SP, BC.WRE</span></li>
+          <li>Robert John Ryan<span>Ph.D., P.E., BC.WRE, M.ASCE</span></li>
+          <li>K. Majid Sadeghi<span>Ph.D., P.E., BC.WRE, M.ASCE</span></li>
+          <li>Aly Salem<span>S.M.ASCE</span></li>
+          <li>David James Sample<span>Ph.D., P.E., BC.WRE, M.ASCE</span></li>
+          <li>Kody Schouten<span>M.Eng, P.E., CFM</span></li>
+          <li>Michelle Simon<span>Ph.D., P.E.</span></li>
+          <li>David William Spelman<span>Ph.D., P.E., M.ASCE</span></li>
+          <li>Scott Struck<span>Ph.D., F.EWRI, M.ASCE</span></li>
+          <li>Robert Guy Traver<span>Ph.D., P.E., BC.WRE, F.EWRI, F.ASCE</span></li>
+          <li>Bridget Wadzuk<span>Ph.D., A.M.ASCE</span></li>
+          <li>Thomas Michael Walski<span>Ph.D., P.E., F.EWRI, F.ASCE</span></li>
+          <li>K. Zhang</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section soft" id="join">
+    <div class="container">
+      <div class="cta reveal on-dark">
+        <div class="wave-field" data-lines="28"></div>
+        <div>
+          <span class="eyebrow light">Get involved</span>
+          <h2>Help shape the future of stormwater modeling.</h2>
+          <p>We welcome new members at every career stage, from students and researchers to consultants, software developers and agency reviewers.</p>
+          <ul class="cta-list">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"></use></svg><span>Join a task committee and help produce a real deliverable</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"></use></svg><span>Present a <em>Modeler Minute</em> at an upcoming meeting</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"></use></svg><span>Contribute tutorials, benchmark models or data sources</span></li>
+          </ul>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-light" href="mailto:contact@ewri-stormwater.org?subject=Joining%20the%20Stormwater%20Modeling%20Committee">Email the committee <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg></a>
+          <a class="btn btn-ghost-light" href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" rel="noopener">See our talks <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-external"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="footer-rule" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/img/mark-simple.svg" alt="" width="40" height="40">
+          <span class="brand-text">
+            <span class="brand-name">Stormwater Modeling Committee</span>
+            <span class="brand-org">ASCE | EWRI</span>
+          </span>
+        </a>
+        <p>A technical committee of the Urban Water Resources Research Council within the Environmental &amp; Water Resources Institute (EWRI) of the American Society of Civil Engineers.</p>
+        <div class="socials">
+          <a href="mailto:contact@ewri-stormwater.org" aria-label="Email the committee"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"></use></svg></a>
+          <a href="https://www.youtube.com/@StormwaterModelingEWRI" aria-label="YouTube channel" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-youtube"></use></svg></a>
+          <a href="https://github.com/scott-jeffers/ewri-stormwater-committee" aria-label="Website source on GitHub" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-github"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Committee</h4>
+        <ul>
+          <li><a href="#projects">Task committees</a></li>
+          <li><a href="#conferences">Events</a></li>
+          <li><a href="#meeting-notes">Meeting notes</a></li>
+          <li><a href="#leadership">People</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="Resources/data-sources.html">Data sources</a></li>
+          <li><a href="https://www.epa.gov/water-research/storm-water-management-model-swmm" target="_blank" rel="noopener">EPA SWMM</a></li>
+          <li><a href="https://www.youtube.com/@StormwaterModelingEWRI" target="_blank" rel="noopener">Video library</a></li>
+          <li><a href="#resources">All resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:contact@ewri-stormwater.org">contact@ewri-stormwater.org</a></li>
+          <li><a href="#join">Join the committee</a></li>
+          <li><a href="https://www.asce.org/communities/institutes-and-technical-groups/environmental-and-water-resources-institute" target="_blank" rel="noopener">ASCE EWRI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ASCE EWRI Stormwater Modeling Committee</span>
+      <span>Maintained by committee volunteers. Not an official ASCE publication.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

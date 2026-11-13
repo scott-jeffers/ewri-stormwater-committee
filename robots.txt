@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Initiatives/template.html
+
+Sitemap: https://ewri-stormwater.org/sitemap.xml
