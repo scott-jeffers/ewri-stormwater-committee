@@ -533,3 +533,18 @@ a.card:hover .go { background: var(--ink); color: #fff; transform: rotate(-45deg
 .agenda > li::marker { color: var(--blue-deep); font-weight: 700; }
 .agenda ul { margin: 6px 0 0; padding-left: 1.1em; }
 .agenda ul li { margin-bottom: 4px; font-size: 15.5px; color: var(--muted); }
+
+/* Resource tiles v2: equal heights, room for logos */
+.resource-grid { gap: 18px; align-items: stretch; }
+.resource { grid-template-columns: 56px minmax(0, 1fr) 18px; gap: 18px; padding: 24px; height: 100%; align-items: start; }
+.resource-logo { width: 56px; height: 56px; border-radius: 14px; }
+.resource-logo.has-img { background: #fff; padding: 8px; }
+.resource-logo.has-img img { width: 100%; height: 100%; object-fit: contain; }
+.resource-logo .icon { width: 26px; height: 26px; }
+.resource-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.resource h3 { margin: 0; font-size: 16.5px; line-height: 1.3; }
+.resource-tag { margin: 0; }
+.resource p { margin-top: 2px; }
+.resource .ext { margin-top: 2px; }
+.resource-logo.has-img.full { padding: 0; background: #000; border-color: #000; }
+.resource-logo.has-img.full img { object-fit: cover; }
