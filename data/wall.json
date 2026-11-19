@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T04:23Z",
+ "updated": "2026-11-19T04:25Z",
  "status": {
-  "publication": "failed, kept 75 previous: HTTP Error 429: Too Many Requests",
-  "software": "failed, kept 0 previous: HTTP Error 403: Forbidden",
+  "publication": "ok (75)",
+  "software": "ok (33)",
   "video": "ok (6)"
  },
  "photos": {
@@ -24,6 +24,105 @@
  },
  "items": [
   {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "saturday-swmm Saturday-SWMM 1.2.1",
+   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
+   "where": "GitHub release",
+   "date": "2026-11-19",
+   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.2.1"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "saturday-swmm Saturday-SWMM 1.2.0",
+   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
+   "where": "GitHub release",
+   "date": "2026-11-19",
+   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.2.0"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "saturday-swmm Saturday-SWMM 1.1.0",
+   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
+   "where": "GitHub release",
+   "date": "2026-11-18",
+   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.1.0"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: exton-stormwater",
+   "summary": "",
+   "where": "GitHub",
+   "date": "2026-11-17",
+   "url": "https://github.com/scott-jeffers/exton-stormwater"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: Upper-Providence-Model",
+   "summary": "",
+   "where": "GitHub",
+   "date": "2026-11-17",
+   "url": "https://github.com/scott-jeffers/Upper-Providence-Model"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: PA-Stormwater-House-Concept",
+   "summary": "",
+   "where": "GitHub",
+   "date": "2026-11-17",
+   "url": "https://github.com/scott-jeffers/PA-Stormwater-House-Concept"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: swmm-second-brain",
+   "summary": "A knowledge base of what Robert (Bob) Dickinson has written and built about SWMM, ICM and the engines around them, kept in the form Andrej Karpathy described in his 2026 \"LLM wiki\" gist: raw sources that are never edited",
+   "where": "GitHub",
+   "date": "2026-11-14",
+   "url": "https://github.com/dickinsonre/swmm-second-brain"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: swmm-newhaven-exercise",
+   "summary": "",
+   "where": "GitHub",
+   "date": "2026-11-11",
+   "url": "https://github.com/scott-jeffers/swmm-newhaven-exercise"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: benchmark1d2d",
+   "summary": "Benchmark1d2d — open V&V benchmarks for 1D/2D/coupled hydraulic solvers (physics + SWMM/EPANET parity)",
+   "where": "GitHub",
+   "date": "2026-10-13",
+   "url": "https://github.com/scott-jeffers/benchmark1d2d"
+  },
+  {
    "type": "publication",
    "members": [
     "Ali Ebrahimian"
@@ -42,6 +141,17 @@
    "where": "Journal of Sustainable Water in the Built Environment",
    "date": "2026-10-07",
    "url": "https://doi.org/10.1061/jswbay.sweng-731"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Bryant McDonnell"
+   ],
+   "title": "pyswmm v2.2.0",
+   "summary": "Python Wrappers for SWMM",
+   "where": "GitHub release",
+   "date": "2026-10-01",
+   "url": "https://github.com/pyswmm/pyswmm/releases/tag/v2.2.0"
   },
   {
    "type": "publication",
@@ -84,6 +194,17 @@
    "url": "https://doi.org/10.2175/193864718825160296"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: dickinsonre.github.io",
+   "summary": "Estate hub: every repo, app, model library, and blog in one page.",
+   "where": "GitHub",
+   "date": "2026-08-31",
+   "url": "https://github.com/dickinsonre/dickinsonre.github.io"
+  },
+  {
    "type": "publication",
    "members": [
     "Bridget Wadzuk"
@@ -114,6 +235,28 @@
    "url": "https://doi.org/10.18260/1-2--61061"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: gist-lab",
+   "summary": "Live browser for every dickinsonre public gist: search, preview, and run 64 gists and 34 Netlify apps in-page",
+   "where": "GitHub",
+   "date": "2026-08-20",
+   "url": "https://github.com/dickinsonre/gist-lab"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: usa-stormwater",
+   "summary": "",
+   "where": "GitHub",
+   "date": "2026-08-07",
+   "url": "https://github.com/scott-jeffers/usa-stormwater"
+  },
+  {
    "type": "publication",
    "members": [
     "Shirley Clark"
@@ -124,6 +267,17 @@
    "url": "https://doi.org/10.1111/1752-1688.70147"
   },
   {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: saturday-swmm",
+   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
+   "where": "GitHub",
+   "date": "2026-07-28",
+   "url": "https://github.com/scott-jeffers/saturday-swmm"
+  },
+  {
    "type": "publication",
    "members": [
     "Arash Massoudieh"
@@ -132,6 +286,17 @@
    "where": "Journal of Sustainable Water in the Built Environment",
    "date": "2026-07-23",
    "url": "https://doi.org/10.1061/jswbay.sweng-735"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: swmm-inp-explainer",
+   "summary": "Turn any SWMM5 .inp file into a plain-English narrative. Deterministic parser + structured-output LLM. Starter repo.",
+   "where": "GitHub",
+   "date": "2026-07-23",
+   "url": "https://github.com/dickinsonre/swmm-inp-explainer"
   },
   {
    "type": "publication",
@@ -224,6 +389,17 @@
    "url": "https://hal.science/hal-05721045v1"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: swmm-brain",
+   "summary": "Archived. Superseded by github.com/dickinsonre/swmm-second-brain, which holds these files under raw/swmm-brain/.",
+   "where": "GitHub",
+   "date": "2026-06-29",
+   "url": "https://github.com/dickinsonre/swmm-brain"
+  },
+  {
    "type": "publication",
    "members": [
     "Bridget Wadzuk"
@@ -305,6 +481,39 @@
    "url": "https://doi.org/10.2166/bgs.2026.008"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: InfoDrainage-Explorer",
+   "summary": "Interactive reference and learning app for Autodesk InfoDrainage, with timeline, SWMM5/ICM comparison, quiz, and help navigator.",
+   "where": "GitHub",
+   "date": "2026-05-27",
+   "url": "https://github.com/dickinsonre/InfoDrainage-Explorer"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: AIChatbotDeepseek",
+   "summary": "AI assistant for SWMM5 modeling — chat-style interface for interpreting models and importing/exporting .INP files for selected hydraulic objects like weirs and transects.",
+   "where": "GitHub",
+   "date": "2026-05-27",
+   "url": "https://github.com/dickinsonre/AIChatbotDeepseek"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: Sewer-Inspector-Steve",
+   "summary": "A Minecraft-themed sewer inspection and project management app — a playful, game-inspired front end for tracking infrastructure inspection work.",
+   "where": "GitHub",
+   "date": "2026-05-27",
+   "url": "https://github.com/dickinsonre/Sewer-Inspector-Steve"
+  },
+  {
    "type": "video",
    "members": [
     "Scott Jeffers"
@@ -327,6 +536,17 @@
    "url": "https://doi.org/10.1061/jswbay.sweng-697"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: HindsightProphet",
+   "summary": "AI-powered oracle that analyzes engineering ideas and infrastructure decisions through multiple expert AI personas, then synthesizes them into a consensus and implementation roadmap.",
+   "where": "GitHub",
+   "date": "2026-05-21",
+   "url": "https://github.com/dickinsonre/HindsightProphet"
+  },
+  {
    "type": "publication",
    "members": [
     "Elizabeth Fassman-Beck"
@@ -335,6 +555,61 @@
    "where": "Environmental Science & Technology",
    "date": "2026-05-14",
    "url": "https://doi.org/10.1021/acs.est.5c18706"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: SWMM-ICM-StVenant",
+   "summary": "Interactive educational app comparing how EPA SWMM5 and InfoWorks ICM solve the 1D Saint-Venant equations — 117 animated diagrams and calculators across 16 topic categories.",
+   "where": "GitHub",
+   "date": "2026-05-13",
+   "url": "https://github.com/dickinsonre/SWMM-ICM-StVenant"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: NewsletterGallery",
+   "summary": "Searchable web library of SWMM and stormwater modeling knowledge from SWMM5.org: an 8-tab content collection (Newsletters, Articles, Posts, Documents, Apps, Tools, Quiz, Learning Paths) with global search, a stormwater-s",
+   "where": "GitHub",
+   "date": "2026-05-13",
+   "url": "https://github.com/dickinsonre/NewsletterGallery"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: Open-SWMM-Core",
+   "summary": "Experimental in-browser SWMM runtime — runs OpenSWMMCore compiled to WebAssembly so you can load and simulate SWMM models entirely client-side, no desktop install required.",
+   "where": "GitHub",
+   "date": "2026-05-13",
+   "url": "https://github.com/dickinsonre/Open-SWMM-Core"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: SwmmHistory",
+   "summary": "Interactive web app charting the history of SWMM5 and the wider SWMM ecosystem: a version timeline and milestones, an Ecosystem tab profiling commercial and open-source tools (InfoSWMM, InfoWorks ICM, and more), a People",
+   "where": "GitHub",
+   "date": "2026-05-13",
+   "url": "https://github.com/dickinsonre/SwmmHistory"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: Swmm5-UI-Engine",
+   "summary": "Browser-based SWMM5 workspace pairing a TypeScript/Vite UI with a native C engine to load, run, and manage .inp models.",
+   "where": "GitHub",
+   "date": "2026-05-12",
+   "url": "https://github.com/dickinsonre/Swmm5-UI-Engine"
   },
   {
    "type": "publication",
@@ -397,6 +672,50 @@
    "url": "https://doi.org/10.1021/acsestwater.5c01309"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: Code-Rosetta-Stone",
+   "summary": "Multi-language SWMM5 engine comparison lab, mapping the same model logic across 25+ programming languages, with an EPANET code viewer.",
+   "where": "GitHub",
+   "date": "2026-03-30",
+   "url": "https://github.com/dickinsonre/Code-Rosetta-Stone"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: EPANET-SWMM5-Generate",
+   "summary": "Web app that generates hydraulically valid EPANET 2.3 and SWMM 5.2.4 network models, exportable as standard .inp files.",
+   "where": "GitHub",
+   "date": "2026-03-30",
+   "url": "https://github.com/dickinsonre/EPANET-SWMM5-Generate"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: BatchSWMMRunner",
+   "summary": "Full-stack web app for uploading, discretizing, and batch-running SWMM models through the browser instead of file-by-file: multi-scenario runs, discretization change summaries, and AI-powered report generation, with bund",
+   "where": "GitHub",
+   "date": "2026-03-30",
+   "url": "https://github.com/dickinsonre/BatchSWMMRunner"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: SSOAP-Engine",
+   "summary": "RDII analysis workbench for SWMM5/ICM models — calibrate RTK unit hydrographs, review sewer overflow data, and run an in-browser RDII studio.",
+   "where": "GitHub",
+   "date": "2026-03-30",
+   "url": "https://github.com/dickinsonre/SSOAP-Engine"
+  },
+  {
    "type": "publication",
    "members": [
     "Ali Ebrahimian"
@@ -457,6 +776,28 @@
    "url": "https://doi.org/10.2166/bgs.2026.046"
   },
   {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: SJ-SWMM5-ManualSearch",
+   "summary": "What it does: This free, web-based search engine crawls the entire SWMM 5.2 User's Manual — expertly converted from PDF into a structured, web-based collection by Scott Jeffers, PE, PhD — and builds a full-text index cov",
+   "where": "GitHub",
+   "date": "2026-02-14",
+   "url": "https://github.com/dickinsonre/SJ-SWMM5-ManualSearch"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "New open-source project: ewri-stormwater-committee",
+   "summary": "ewri-stormwater-committee",
+   "where": "GitHub",
+   "date": "2026-01-27",
+   "url": "https://github.com/scott-jeffers/ewri-stormwater-committee"
+  },
+  {
    "type": "publication",
    "members": [
     "Arash Massoudieh"
@@ -475,6 +816,17 @@
    "where": "Environmental Science & Technology",
    "date": "2026-01-14",
    "url": "https://doi.org/10.1021/acs.est.5c10109"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: dickinsonre",
+   "summary": "Profile README - the routing page for Robert Dickinson's SWMM repositories, apps, gists, and writing.",
+   "where": "GitHub",
+   "date": "2026-01-14",
+   "url": "https://github.com/dickinsonre/dickinsonre"
   },
   {
    "type": "publication",
@@ -545,6 +897,17 @@
    "where": "Journal of Sustainable Water in the Built Environment",
    "date": "2025-12-17",
    "url": "https://doi.org/10.1061/jswbay.sweng-637"
+  },
+  {
+   "type": "software",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: InfoWorks-ICM-Ruby-Scripting-",
+   "summary": "Reusable Ruby scripts, workflows, and automation tools for InfoWorks ICM - model management, scenario updates, and data processing through the Exchange API.",
+   "where": "GitHub",
+   "date": "2025-12-17",
+   "url": "https://github.com/dickinsonre/InfoWorks-ICM-Ruby-Scripting-"
   },
   {
    "type": "publication",
