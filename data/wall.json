@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-19T04:25Z",
+ "updated": "2026-11-19T04:27Z",
  "status": {
   "publication": "ok (75)",
-  "software": "ok (33)",
+  "software": "ok (22)",
   "video": "ok (6)"
  },
  "photos": {
@@ -37,61 +37,6 @@
   {
    "type": "software",
    "members": [
-    "Scott Jeffers"
-   ],
-   "title": "saturday-swmm Saturday-SWMM 1.2.0",
-   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
-   "where": "GitHub release",
-   "date": "2026-11-19",
-   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.2.0"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "saturday-swmm Saturday-SWMM 1.1.0",
-   "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
-   "where": "GitHub release",
-   "date": "2026-11-18",
-   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.1.0"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: exton-stormwater",
-   "summary": "",
-   "where": "GitHub",
-   "date": "2026-11-17",
-   "url": "https://github.com/scott-jeffers/exton-stormwater"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: Upper-Providence-Model",
-   "summary": "",
-   "where": "GitHub",
-   "date": "2026-11-17",
-   "url": "https://github.com/scott-jeffers/Upper-Providence-Model"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: PA-Stormwater-House-Concept",
-   "summary": "",
-   "where": "GitHub",
-   "date": "2026-11-17",
-   "url": "https://github.com/scott-jeffers/PA-Stormwater-House-Concept"
-  },
-  {
-   "type": "software",
-   "members": [
     "Robert Dickinson"
    ],
    "title": "New open-source project: swmm-second-brain",
@@ -99,17 +44,6 @@
    "where": "GitHub",
    "date": "2026-11-14",
    "url": "https://github.com/dickinsonre/swmm-second-brain"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: swmm-newhaven-exercise",
-   "summary": "",
-   "where": "GitHub",
-   "date": "2026-11-11",
-   "url": "https://github.com/scott-jeffers/swmm-newhaven-exercise"
   },
   {
    "type": "software",
@@ -194,17 +128,6 @@
    "url": "https://doi.org/10.2175/193864718825160296"
   },
   {
-   "type": "software",
-   "members": [
-    "Robert Dickinson"
-   ],
-   "title": "New open-source project: dickinsonre.github.io",
-   "summary": "Estate hub: every repo, app, model library, and blog in one page.",
-   "where": "GitHub",
-   "date": "2026-08-31",
-   "url": "https://github.com/dickinsonre/dickinsonre.github.io"
-  },
-  {
    "type": "publication",
    "members": [
     "Bridget Wadzuk"
@@ -244,17 +167,6 @@
    "where": "GitHub",
    "date": "2026-08-20",
    "url": "https://github.com/dickinsonre/gist-lab"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: usa-stormwater",
-   "summary": "",
-   "where": "GitHub",
-   "date": "2026-08-07",
-   "url": "https://github.com/scott-jeffers/usa-stormwater"
   },
   {
    "type": "publication",
@@ -387,17 +299,6 @@
    "where": "HAL",
    "date": "2026-06-29",
    "url": "https://hal.science/hal-05721045v1"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Robert Dickinson"
-   ],
-   "title": "New open-source project: swmm-brain",
-   "summary": "Archived. Superseded by github.com/dickinsonre/swmm-second-brain, which holds these files under raw/swmm-brain/.",
-   "where": "GitHub",
-   "date": "2026-06-29",
-   "url": "https://github.com/dickinsonre/swmm-brain"
   },
   {
    "type": "publication",
@@ -787,17 +688,6 @@
    "url": "https://github.com/dickinsonre/SJ-SWMM5-ManualSearch"
   },
   {
-   "type": "software",
-   "members": [
-    "Scott Jeffers"
-   ],
-   "title": "New open-source project: ewri-stormwater-committee",
-   "summary": "ewri-stormwater-committee",
-   "where": "GitHub",
-   "date": "2026-01-27",
-   "url": "https://github.com/scott-jeffers/ewri-stormwater-committee"
-  },
-  {
    "type": "publication",
    "members": [
     "Arash Massoudieh"
@@ -816,17 +706,6 @@
    "where": "Environmental Science & Technology",
    "date": "2026-01-14",
    "url": "https://doi.org/10.1021/acs.est.5c10109"
-  },
-  {
-   "type": "software",
-   "members": [
-    "Robert Dickinson"
-   ],
-   "title": "New open-source project: dickinsonre",
-   "summary": "Profile README - the routing page for Robert Dickinson's SWMM repositories, apps, gists, and writing.",
-   "where": "GitHub",
-   "date": "2026-01-14",
-   "url": "https://github.com/dickinsonre/dickinsonre"
   },
   {
    "type": "publication",
