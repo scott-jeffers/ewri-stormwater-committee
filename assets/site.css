@@ -519,3 +519,17 @@ a.card:hover .go { background: var(--ink); color: #fff; transform: rotate(-45deg
 .wall-controls select { font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink); }
 .wall-count { margin-left: auto; font-size: 14px; color: var(--muted); }
 .wall-note { font-size: 14px; color: var(--muted); margin-top: 40px; max-width: 760px; }
+
+/* Meeting notes extras */
+.speakers { list-style: none; padding: 0 !important; margin: 20px 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.speakers li { margin: 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; font-size: 15px; }
+.speakers li b { color: var(--ink); font-weight: 600; }
+.speakers li span { font-size: 13.5px; color: var(--muted); }
+.flyer { margin: 28px 0 8px; display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+.flyer img { width: 100%; border-radius: 12px; border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.flyer figcaption { grid-column: 1 / -1; font-size: 14px; color: var(--muted); }
+.agenda { padding-left: 1.4em; }
+.agenda > li { margin-bottom: 10px; }
+.agenda > li::marker { color: var(--blue-deep); font-weight: 700; }
+.agenda ul { margin: 6px 0 0; padding-left: 1.1em; }
+.agenda ul li { margin-bottom: 4px; font-size: 15.5px; color: var(--muted); }
