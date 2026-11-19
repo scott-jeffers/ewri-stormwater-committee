@@ -28,6 +28,7 @@ OUT = os.path.join(ROOT, "data", "wall.json")
 UA = "ewri-stormwater-wall/1.0 (+https://ewri-stormwater.org; mailto:contact@ewri-stormwater.org)"
 TODAY = dt.date.today()
 MAX_ITEMS = 150
+IGNORE_REPOS = {"scott-jeffers/ewri-stormwater-committee"}
 SKIP_WORK_TYPES = {"peer-review", "erratum", "paratext", "retraction", "editorial", "letter", "other", "supplementary-materials", "dataset", "software"}
 
 
@@ -111,9 +112,14 @@ def github(cfg):
         if not user and not extra:
             continue
         repos = json.loads(fetch(f"https://api.github.com/users/{user}/repos?sort=pushed&per_page=30&type=owner", hdr)) if user else []
+        def worth_showing(r):
+            name = r.get("name", "").lower()
+            return not (r.get("fork") or r.get("private") or r.get("archived")
+                        or not (r.get("description") or "").strip()
+                        or name == (user or "").lower() or name.endswith(".github.io")
+                        or r.get("full_name", "").lower() in IGNORE_REPOS)
+        repos = [r for r in repos if worth_showing(r)]
         for r in repos:
-            if r.get("fork") or r.get("private"):
-                continue
             created = r["created_at"][:10]
             if dt.date.fromisoformat(created) >= since:
                 items.append({
@@ -129,9 +135,9 @@ def github(cfg):
                     r["description"] = json.loads(fetch(f"https://api.github.com/repos/{r['full_name']}", hdr)).get("description")
             except urllib.error.HTTPError:
                 continue
-            for rel in rels:
+            for rel in rels[:1]:  # only the newest release of each repo
                 d = (rel.get("published_at") or "")[:10]
-                if not d or rel.get("draft") or dt.date.fromisoformat(d) < since:
+                if not d or rel.get("draft") or rel.get("prerelease") or dt.date.fromisoformat(d) < since:
                     continue
                 items.append({
                     "type": "software", "members": [p["member"]],
