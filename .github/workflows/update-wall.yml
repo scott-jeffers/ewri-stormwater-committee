@@ -1,0 +1,40 @@
+name: Update member activity wall
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # every day at 04:17 UTC
+  workflow_dispatch:         # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - data/wall-sources.json
+      - tools/update_wall.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-wall
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect member activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python tools/update_wall.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/wall.json; then echo "No changes"; exit 0; fi
+          git config user.name "wall-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/wall.json
+          git commit -m "Update member activity wall [skip ci]"
+          git push

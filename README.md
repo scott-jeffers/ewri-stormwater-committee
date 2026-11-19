@@ -40,3 +40,14 @@ Preview locally with `python3 -m http.server` and open http://localhost:8000.
 
 **Cache busting:** pages load `assets/site.css?v=YYYYMMDD`. After changing the CSS or JS, bump that
 number in every HTML file (search & replace) so visitors' browsers fetch the new version.
+
+## Member activity wall
+
+`activity.html` and the "What members are up to" section on the homepage show recent publications,
+open-source releases and videos by members. Nobody posts anything: a GitHub Action
+(`.github/workflows/update-wall.yml`) runs `tools/update_wall.py` every day, collects items from
+OpenAlex (papers), GitHub (repos/releases) and YouTube (channel feeds), and commits `data/wall.json`.
+
+- **Add/remove a person:** edit `data/wall-sources.json` (OpenAlex author ID, GitHub username, YouTube channel ID).
+- **Run it now:** GitHub → Actions → "Update member activity wall" → Run workflow.
+- **Optional:** add a free OpenAlex API key as the repo secret `OPENALEX_API_KEY` for a dedicated daily quota.

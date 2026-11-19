@@ -1,0 +1,129 @@
+{
+ "_readme": "People whose public work appears on the 'What members are up to' wall. openalex = OpenAlex author ID (openalex.org), github = GitHub username, repos = extra GitHub repos to watch for releases, youtube = YouTube channel ID. Remove a person to take them off the wall.",
+ "lookback_days": {
+  "publications": 540,
+  "software": 365,
+  "videos": 540
+ },
+ "people": [
+  {
+   "member": "David Sample",
+   "photo": "assets/img/members/sample.jpg",
+   "openalex": "A5012979990"
+  },
+  {
+   "member": "Tom Batroney",
+   "photo": "assets/img/members/bartoney.jpg",
+   "openalex": "A5040703996"
+  },
+  {
+   "member": "Azadeh Bloorchian-Verschuyl",
+   "photo": "assets/img/members/verschuyl.jpg",
+   "openalex": "A5070738374"
+  },
+  {
+   "member": "Angela Brackbill",
+   "openalex": "A5097083416"
+  },
+  {
+   "member": "Shirley Clark",
+   "photo": "assets/img/members/shirley.jpg",
+   "openalex": "A5010209493"
+  },
+  {
+   "member": "Robert Dickinson",
+   "photo": "assets/img/members/bob.jpg",
+   "github": "dickinsonre",
+   "youtube": "UC1NrcO1oeXHMIBamfuNA78A"
+  },
+  {
+   "member": "Ali Ebrahimian",
+   "photo": "assets/img/members/ali.jpg",
+   "openalex": "A5055838362"
+  },
+  {
+   "member": "Elizabeth Fassman-Beck",
+   "photo": "assets/img/members/fassman.jpg",
+   "openalex": "A5082807337"
+  },
+  {
+   "member": "Mitch Heineman",
+   "photo": "assets/img/members/mitch.jpg",
+   "openalex": "A5038935756"
+  },
+  {
+   "member": "Ben Hodges",
+   "photo": "assets/img/members/ben.jpg",
+   "openalex": "A5015887666"
+  },
+  {
+   "member": "Scott Jeffers",
+   "photo": "assets/img/members/scott-jeffers.jpg",
+   "openalex": "A5075476515",
+   "github": "scott-jeffers",
+   "youtube": "UCpaUgk0PiQQbK3miRdAfMvA"
+  },
+  {
+   "member": "Bill Lucas",
+   "openalex": "A5013424802"
+  },
+  {
+   "member": "Arash Massoudieh",
+   "photo": "assets/img/members/arash.jpg",
+   "openalex": "A5069460661"
+  },
+  {
+   "member": "Bryant McDonnell",
+   "photo": "assets/img/members/bryant.jpg",
+   "openalex": "A5073461594",
+   "github": "bemcdonnell",
+   "repos": [
+    "pyswmm/pyswmm",
+    "pyswmm/swmm-python"
+   ]
+  },
+  {
+   "member": "Erica McKenzie",
+   "photo": "assets/img/members/erica.jpg",
+   "openalex": "A5047668009"
+  },
+  {
+   "member": "Daniel Medina",
+   "openalex": "A5103631449"
+  },
+  {
+   "member": "Aaron Poresky",
+   "photo": "assets/img/members/aaron.jpg",
+   "openalex": "A5001071206"
+  },
+  {
+   "member": "Marcus Quigley",
+   "openalex": "A5024221239"
+  },
+  {
+   "member": "Christopher Ranck",
+   "openalex": "A5070618406"
+  },
+  {
+   "member": "Aly Salem",
+   "openalex": "A5004906661"
+  },
+  {
+   "member": "Scott Struck",
+   "openalex": "A5059540744"
+  },
+  {
+   "member": "Robert Traver",
+   "photo": "assets/img/members/traver.jpg",
+   "openalex": "A5033869558"
+  },
+  {
+   "member": "Bridget Wadzuk",
+   "openalex": "A5077913720"
+  },
+  {
+   "member": "Thomas Walski",
+   "openalex": "A5078073019"
+  }
+ ]
+}

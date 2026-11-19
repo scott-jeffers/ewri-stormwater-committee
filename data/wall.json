@@ -1,0 +1,844 @@
+{
+ "updated": "2026-11-19T04:23Z",
+ "status": {
+  "publication": "failed, kept 75 previous: HTTP Error 429: Too Many Requests",
+  "software": "failed, kept 0 previous: HTTP Error 403: Forbidden",
+  "video": "ok (6)"
+ },
+ "photos": {
+  "David Sample": "assets/img/members/sample.jpg",
+  "Tom Batroney": "assets/img/members/bartoney.jpg",
+  "Azadeh Bloorchian-Verschuyl": "assets/img/members/verschuyl.jpg",
+  "Shirley Clark": "assets/img/members/shirley.jpg",
+  "Robert Dickinson": "assets/img/members/bob.jpg",
+  "Ali Ebrahimian": "assets/img/members/ali.jpg",
+  "Elizabeth Fassman-Beck": "assets/img/members/fassman.jpg",
+  "Mitch Heineman": "assets/img/members/mitch.jpg",
+  "Ben Hodges": "assets/img/members/ben.jpg",
+  "Scott Jeffers": "assets/img/members/scott-jeffers.jpg",
+  "Arash Massoudieh": "assets/img/members/arash.jpg",
+  "Bryant McDonnell": "assets/img/members/bryant.jpg",
+  "Erica McKenzie": "assets/img/members/erica.jpg",
+  "Aaron Poresky": "assets/img/members/aaron.jpg",
+  "Robert Traver": "assets/img/members/traver.jpg"
+ },
+ "items": [
+  {
+   "type": "publication",
+   "members": [
+    "Ali Ebrahimian"
+   ],
+   "title": "Spatial structure of urban tree cooling: Radial decay, azimuthal asymmetry, and vertical stratification under a mature tropical canopy",
+   "where": "Urban forestry & urban greening",
+   "date": "2026-10-09",
+   "url": "https://doi.org/10.1016/j.ufug.2026.129727"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Modeling Hydrology of a Solar Farm Using a Flexible Open-Source Hydrological Model",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-10-07",
+   "url": "https://doi.org/10.1061/jswbay.sweng-731"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Satellite-based condition assessment of urban green stormwater infrastructure using a hybrid machine learning framework",
+   "where": "Scientific Reports",
+   "date": "2026-09-22",
+   "url": "https://doi.org/10.1038/s41598-026-67716-2"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Decoupling Carbon and Phosphorus Release During Primary Sludge Fermentation in Chem-P Plants",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-09-17",
+   "url": "https://doi.org/10.2175/193864718825160309"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Impact of Primary Sludge Dilution on Fermentation Hydrolysis Rate and Odor Mitigation",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-09-17",
+   "url": "https://doi.org/10.2175/193864718825160455"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Lessons Learned from a Pilot-Scale inDENSE Application: Improving High-Rate Contact-Stabilization Performance and Capacity",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-09-17",
+   "url": "https://doi.org/10.2175/193864718825160296"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "RFE-NLI: A Collaborative Approach to Advancing Sustainable Engineering Education",
+   "where": "ASEE Annual Conference & Exposition",
+   "date": "2026-08-21",
+   "url": "https://doi.org/10.18260/1-2--60317"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "A Three-Part Activity to Draw Out the Importance of System Interconnectedness in Engineering Analysis",
+   "where": "ASEE Annual Conference & Exposition",
+   "date": "2026-08-21",
+   "url": "https://doi.org/10.18260/1-2--59210"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Work-in-Progress: Investigating the Broader Impact of Faculty Development Practices for Integrating Sustainability into Higher Education Engineering Curriculum",
+   "where": "ASEE Annual Conference & Exposition",
+   "date": "2026-08-21",
+   "url": "https://doi.org/10.18260/1-2--61061"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Shirley Clark"
+   ],
+   "title": "The Invisible Infrastructure: Ensuring U.S. Federal Water Data Integrity and Continuity for a Non‐Stationary Future",
+   "where": "JAWRA Journal of the American Water Resources Association",
+   "date": "2026-08-01",
+   "url": "https://doi.org/10.1111/1752-1688.70147"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "A Forecast-Informed Rule-Based Control Framework for Optimizing the Hydraulic Performance of Bioretention Systems",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-07-23",
+   "url": "https://doi.org/10.1061/jswbay.sweng-735"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Frequency of Maintenance Needs in Biofilters throughout Los Angeles",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-07-17",
+   "url": "https://doi.org/10.1061/jswbay.sweng-725"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Aaron Poresky"
+   ],
+   "title": "Real Time Controls of Stormwater Facilities in Oregon: Lessons Learned from 10 years of Operation",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-07-07",
+   "url": "https://doi.org/10.2175/193864718825160268"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Assessing the Watershed-Scale Impact of Real-Time Control in Sustainable Stormwater Management",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-07-02",
+   "url": "https://doi.org/10.1061/jswbay.sweng-701"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Plasticity Screening for Bioinfiltration and Bioretention Media",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-07-01",
+   "url": "https://doi.org/10.1061/jswbay.sweng-699"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Predicting Blue-Green Infrastructure Underperformance Using Integrated Machine-Learning Models",
+   "where": "HAL",
+   "date": "2026-06-29",
+   "url": "https://hal.science/hal-05723466v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "The formation of a global center on urban nature-based solutions",
+   "where": "HAL",
+   "date": "2026-06-29",
+   "url": "https://hal.science/hal-05723325v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Robert Traver"
+   ],
+   "title": "Bringing Resilience to Stormwater Management -Updating the Pennsylvania (USA) Post-Construction Stormwater Management Manual.",
+   "where": "HAL",
+   "date": "2026-06-29",
+   "url": "https://hal.science/hal-05723360v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "BGI Performance Variability - Developing an Experimental Method",
+   "where": "HAL",
+   "date": "2026-06-29",
+   "url": "https://hal.science/hal-05720734v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Microplastics Removal and Accumulation in Southern California Biofilters",
+   "where": "HAL",
+   "date": "2026-06-29",
+   "url": "https://hal.science/hal-05721045v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "An Integration of Multiple Bioretention Design Manuals and Data Sources to Improve Plant Selection and Outcomes",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-06-26",
+   "url": "https://doi.org/10.1061/jswbay.sweng-702"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Erica McKenzie"
+   ],
+   "title": "Unraveling the Role of Gas-Phase Plasma Species in PFAS Degradation During Treatment of Contaminated Water with Submerged Gliding Arc Plasma (GAP) Discharge",
+   "where": "Plasma Chemistry and Plasma Processing",
+   "date": "2026-06-23",
+   "url": "https://doi.org/10.1007/s11090-026-10688-y"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Scott Struck"
+   ],
+   "title": "Acquirium: Toward Interoperable Data Driven Applications in Water Treatment Systems",
+   "where": "ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation",
+   "date": "2026-06-19",
+   "url": "https://doi.org/10.1145/3744256.3812557"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Mapping the past: identifying analog precipitation years with reference rainfall metrics",
+   "where": "Journal of Hydrology",
+   "date": "2026-06-16",
+   "url": "https://doi.org/10.1016/j.jhydrol.2026.135866"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Understanding trace-element mobilization in a redox mixing zone of a river–aquifer system: Insights from a multi-tracer Bayesian mixing framework",
+   "where": "Journal of Contaminant Hydrology",
+   "date": "2026-06-08",
+   "url": "https://doi.org/10.1016/j.jconhyd.2026.105021"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ben Hodges"
+   ],
+   "title": "Initiation of Air Trapping between Two Manholes in a Stormwater Conduit",
+   "where": "Journal of Hydraulic Engineering",
+   "date": "2026-06-04",
+   "url": "https://doi.org/10.1061/jhend8.hyeng-14514"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "FEMA and NOAA Data Demonstration of NEER Maps Online",
+   "where": "Anthropocene Engineering",
+   "date": "2026-06-03",
+   "url": "https://www.youtube.com/watch?v=luASc23vO5w",
+   "thumb": "https://i.ytimg.com/vi/luASc23vO5w/mqdefault.jpg"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Field monitoring of microplastics in biofilter media: insights into media characteristics and design",
+   "where": "Blue-Green Systems",
+   "date": "2026-05-30",
+   "url": "https://doi.org/10.2166/bgs.2026.008"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "Public Stormwater Mapping - Exton/Downingtown",
+   "where": "Anthropocene Engineering",
+   "date": "2026-05-26",
+   "url": "https://www.youtube.com/watch?v=5KR1S80zeOk",
+   "thumb": "https://i.ytimg.com/vi/5KR1S80zeOk/mqdefault.jpg"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Robert Traver",
+    "Bridget Wadzuk"
+   ],
+   "title": "Field-Scale Assessment of Surface Filtration Pretreatment to Reduce Sediment Accumulation in a Stormwater Infiltration Trench",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-05-23",
+   "url": "https://doi.org/10.1061/jswbay.sweng-697"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Field Monitoring of Microplastics in Urban Runoff: Treatment Efficiency of Biofilters",
+   "where": "Environmental Science & Technology",
+   "date": "2026-05-14",
+   "url": "https://doi.org/10.1021/acs.est.5c18706"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ben Hodges"
+   ],
+   "title": "Comparative Study of Prior Models for Curb Opening Inlet Lengths and Neuro-Fuzzy Modeling for Hydraulic Design",
+   "where": "Water",
+   "date": "2026-05-11",
+   "url": "https://doi.org/10.3390/w18101153"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ben Hodges"
+   ],
+   "title": "Investigation of Air Pressurization during the Filling of Complex Pipe Networks",
+   "where": "Journal of Hydraulic Engineering",
+   "date": "2026-05-08",
+   "url": "https://doi.org/10.1061/jhend8.hyeng-14532"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Lessons Learned from a Pilot-Scale High-Rate Contact Stabilization System with inDENSE Application: Coupling Biological and Physical Selection to Improve Performance and Capacity",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-05-08",
+   "url": "https://doi.org/10.2175/193864718825160236"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Primary Sludge Fermentation in Chem-P Plants: Decoupling P-Release from C-Release",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-05-08",
+   "url": "https://doi.org/10.2175/193864718825160232"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Shirley Clark"
+   ],
+   "title": "Modeling Strategies for Flood Mitigation in a Highly-Developed Urban Area",
+   "where": "World Environmental and Water Resources Congress",
+   "date": "2026-04-23",
+   "url": "https://doi.org/10.1061/9780784486931.051"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Evaluating the Effectiveness of Street Sweeping for Reducing Toxicity of Urban Runoff",
+   "where": "ACS ES&T Water",
+   "date": "2026-03-31",
+   "url": "https://doi.org/10.1021/acsestwater.5c01309"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ali Ebrahimian"
+   ],
+   "title": "Critical Source Areas for Nonpoint Source Pollution and Their Spatial Relationship with Impervious Cover in Urban Watersheds",
+   "where": "Journal of Environmental Engineering",
+   "date": "2026-03-26",
+   "url": "https://doi.org/10.1061/joeedu.eeeng-8594"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Robert Traver"
+   ],
+   "title": "Stormwater Modelling Coupled to Field Monitored Storm Data – Lessons Learned",
+   "where": "OJS-Service ULBT",
+   "date": "2026-03-19",
+   "url": "https://doi.org/10.71573/enpems27"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Automated detection of illicit discharges in storm drains using a distributed network of low-cost IoT sensors",
+   "where": "Urban Water Journal",
+   "date": "2026-03-11",
+   "url": "https://doi.org/10.1080/1573062x.2026.2641088"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Automated detection of illicit discharges in storm drains using a distributed network of low-cost IoT sensors",
+   "where": "Figshare",
+   "date": "2026-03-11",
+   "url": "https://doi.org/10.6084/m9.figshare.31649004"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Incorporating artificial intelligence into the future of stormwater management",
+   "where": "Discover Applied Sciences",
+   "date": "2026-03-05",
+   "url": "https://doi.org/10.1007/s42452-026-08488-2"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "David Sample"
+   ],
+   "title": "Optimizing stormwater control measures for improving climate resiliency in mixed urban–rural watersheds",
+   "where": "Blue-Green Systems",
+   "date": "2026-02-23",
+   "url": "https://doi.org/10.2166/bgs.2026.046"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Green Water Economic Emphasis on Nexus",
+   "where": "Wiley eBooks",
+   "date": "2026-01-16",
+   "url": "https://doi.org/10.1002/9781394248087.ch5"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Erica McKenzie"
+   ],
+   "title": "Challenges and Opportunities in PFAS Waste Management for Semiconductor Manufacturing",
+   "where": "Environmental Science & Technology",
+   "date": "2026-01-14",
+   "url": "https://doi.org/10.1021/acs.est.5c10109"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Erica McKenzie"
+   ],
+   "title": "Editor’s Note: Differential Effects of Clinically Relevant N- versus C-Terminal Truncating CDKN1A Mutations on Cisplatin Sensitivity in Bladder Cancer",
+   "where": "Molecular Cancer Research",
+   "date": "2026-01-02",
+   "url": "https://doi.org/10.1158/1541-7786.mcr-25-1186"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "A Machine Learning Framework for Predicting Ponding Duration Across Green Stormwater Infrastructure Systems",
+   "where": "SSRN Electronic Journal",
+   "date": "2026-01-01",
+   "url": "https://doi.org/10.2139/ssrn.7235188"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "A Machine Learning Framework for Predicting Ponding Duration Across Green Stormwater Infrastructure Systems to Support Performance Assessment and Management",
+   "where": "SSRN Electronic Journal",
+   "date": "2026-01-01",
+   "url": "https://doi.org/10.2139/ssrn.7585064"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Operating Manuals for BoSL DTEC-RAD-TURB-CAM",
+   "where": "OSF Preprints",
+   "date": "2025-12-28",
+   "url": "https://osf.io/cx54j"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Bioretention Flow-Through Planter Performance and Design Considerations",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2025-12-24",
+   "url": "https://doi.org/10.1061/jswbay.sweng-582"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Surrogate modeling of ASM1 using feedforward and LSTM neural networks",
+   "where": "Journal of Water Process Engineering",
+   "date": "2025-12-17",
+   "url": "https://doi.org/10.1016/j.jwpe.2025.109246"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Evaluating the Accuracy of Design Equations for Different Curb Inlet Designs on Capture Efficiency",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2025-12-17",
+   "url": "https://doi.org/10.1061/jswbay.sweng-637"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "David Sample"
+   ],
+   "title": "Evaluating the combined effects of climate and land use change on hydrological response in a mixed land use watershed",
+   "where": "Journal of Environmental Management",
+   "date": "2025-12-12",
+   "url": "https://doi.org/10.1016/j.jenvman.2025.128277"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Aly Salem"
+   ],
+   "title": "Machine Learning Driven Source Identification, State Estimation and Sensor Optimization in Water Systems",
+   "where": "University of Illinois Chicago",
+   "date": "2025-12-01",
+   "url": "https://doi.org/10.25417/uic.31451038"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ben Hodges"
+   ],
+   "title": "Advancing Watershed-Scale Hydrodynamic Modeling: Techniques for Comparative Analysis of Saint-Venant Solvers",
+   "where": "Zenodo",
+   "date": "2025-11-23",
+   "url": "https://doi.org/10.5281/zenodo.17685956"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Scott Struck"
+   ],
+   "title": "Poster Abstract: Acquirium: A Data-Metadata Management Framework for Water Treatment Systems",
+   "where": "ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation",
+   "date": "2025-11-11",
+   "url": "https://doi.org/10.1145/3736425.3772123"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "How to Make Beautiful DEMs in QGIS",
+   "where": "Anthropocene Engineering",
+   "date": "2025-11-03",
+   "url": "https://www.youtube.com/watch?v=p_EiWLpfuY8",
+   "thumb": "https://i.ytimg.com/vi/p_EiWLpfuY8/mqdefault.jpg"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Utilizing Extensive Monitoring Data to Evaluate Green Stormwater Infrastructure (GSI) Performance",
+   "where": "Preprint",
+   "date": "2025-10-12",
+   "url": "https://doi.org/10.22541/essoar.176030813.32455398/v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Ali Ebrahimian"
+   ],
+   "title": "A Comprehensive Decision Support Tool for Accelerated Bridge Construction",
+   "where": "Infrastructures",
+   "date": "2025-10-08",
+   "url": "https://doi.org/10.3390/infrastructures10100265"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "David Sample"
+   ],
+   "title": "Quantitative Assessment of Environmental Site Design vs. Traditional Storage‐Based Stormwater Management: Impacts on Catchment Hydrology of Minebank Run, Baltimore, MD",
+   "where": "Hydrological Processes",
+   "date": "2025-10-01",
+   "url": "https://doi.org/10.1002/hyp.70268"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Angela Brackbill"
+   ],
+   "title": "The Long's Park Treatment Wetlands and Park Enhancement Project",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825159966"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Investigating Fermentation of Primary Sludge in Full-Scale Gravity Thickeners",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825160025"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Enhancing polymer efficiency through use of diluted polymer for final dewatering",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825159968"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Christopher Ranck"
+   ],
+   "title": "CSO Post-Construction Monitoring: Four Watersheds, Forty-Four CSOs, Seventeen Miles of Tunnel, a Storage Tank, and Successful Achievement of Performance Criteria",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825159985"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Using video analysis to better understand Settleability in High-Rate Activated Sludge Systems",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825160026"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Improving Settleability and Clarifier Capacity for High-rate Contact-stabilization Systems Through inDENSE Application",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-09-16",
+   "url": "https://doi.org/10.2175/193864718825160088"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Tailored carbonaceous materials as biofilter amendments for PFAS removal in stormwater runoff",
+   "where": "Water Research",
+   "date": "2025-09-08",
+   "url": "https://doi.org/10.1016/j.watres.2025.124569"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Shirley Clark"
+   ],
+   "title": "Wastewater surveillance of SARS-CoV-2 and influenza in a dynamic university community: understanding how wastewater measurements correspond to reported cases",
+   "where": "The Science of The Total Environment",
+   "date": "2025-09-04",
+   "url": "https://doi.org/10.1016/j.scitotenv.2025.180377"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Assessment of PFOA and PFOS Sorption to Engineered Media in Biofiltration Columns",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2025-08-25",
+   "url": "https://doi.org/10.1061/jswbay.sweng-668"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Faculty Development to Facilitate Institutionalization of the Engineers for One Planet Framework",
+   "where": "ASEE Annual Conference & Exposition",
+   "date": "2025-08-21",
+   "url": "https://doi.org/10.18260/1-2--56562"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Influence of Volumetric Water Content Sensor Configuration in Evaluating Bioretention Planter Retention and Evapotranspiration",
+   "where": "Journal of Hydrologic Engineering",
+   "date": "2025-08-08",
+   "url": "https://doi.org/10.1061/jhyeff.heeng-6133"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Impact of Media Properties on Dissolved Copper Sorption in Stormwater Biofiltration",
+   "where": "ACS ES&T Water",
+   "date": "2025-08-08",
+   "url": "https://doi.org/10.1021/acsestwater.5c00680"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "swmm5fileanalyzer.com",
+   "where": "Robert Dickinson",
+   "date": "2025-08-04",
+   "url": "https://www.youtube.com/watch?v=AuTVbqFHtQ4",
+   "thumb": "https://i.ytimg.com/vi/AuTVbqFHtQ4/mqdefault.jpg"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Aly Salem"
+   ],
+   "title": "A Framework for Evaluating the Integration of Green Infrastructure into Stormwater System Design",
+   "where": "Research Square",
+   "date": "2025-07-29",
+   "url": "https://doi.org/10.21203/rs.3.rs-6926795/v1"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "David Sample"
+   ],
+   "title": "Coupling SWAT + and SWMM Models to Quantify Streamflow in Mixed Rural–Urban Watersheds",
+   "where": "Hydrological Processes",
+   "date": "2025-07-29",
+   "url": "https://doi.org/10.1002/hyp.70218"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Water on the Horizon: A Suggested Future for Scientific Communication in Water Resources Management",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2025-07-24",
+   "url": "https://doi.org/10.1061/jswbay.sweng-615"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Scott Jeffers"
+   ],
+   "title": "Texas Flooding Analysis - July 4th 2025 - USGS - NOAA",
+   "where": "Anthropocene Engineering",
+   "date": "2025-07-06",
+   "url": "https://www.youtube.com/watch?v=IFGUmqpwdKI",
+   "thumb": "https://i.ytimg.com/vi/IFGUmqpwdKI/mqdefault.jpg"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Lepidoptera abundance and diversity as a quantitative measure of ecosystem function in bioretention design",
+   "where": "Ecological Indicators",
+   "date": "2025-07-01",
+   "url": "https://doi.org/10.1016/j.ecolind.2025.113810"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "A Complete Water Balance of a Constructed Stormwater Wetland",
+   "where": "Water Resources Research",
+   "date": "2025-07-01",
+   "url": "https://doi.org/10.1029/2024wr039045"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Reconceptualizing urban flood modeling: Toward intersectional and equitable urban flood risk planning",
+   "where": "Sustainable Cities and Society",
+   "date": "2025-06-25",
+   "url": "https://doi.org/10.1016/j.scs.2025.106578"
+  },
+  {
+   "type": "video",
+   "members": [
+    "Robert Dickinson"
+   ],
+   "title": "HW_SW_TABLE_RUBY_ALL_TABLE_READER",
+   "where": "Robert Dickinson",
+   "date": "2025-06-11",
+   "url": "https://www.youtube.com/watch?v=l6bh8J8oXyw",
+   "thumb": "https://i.ytimg.com/vi/l6bh8J8oXyw/mqdefault.jpg"
+  }
+ ]
+}
