@@ -548,3 +548,7 @@ a.card:hover .go { background: var(--ink); color: #fff; transform: rotate(-45deg
 .resource .ext { margin-top: 2px; }
 .resource-logo.has-img.full { padding: 0; background: #000; border-color: #000; }
 .resource-logo.has-img.full img { object-fit: cover; }
+.slides { margin: 24px 0 8px; display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+.slides img { width: 100%; border-radius: 10px; border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.slides figcaption { grid-column: 1 / -1; font-size: 14px; color: var(--muted); }
+@media (max-width: 600px) { .slides, .flyer { grid-template-columns: 1fr; } }
