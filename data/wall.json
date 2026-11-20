@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T04:27Z",
+ "updated": "2026-11-20T12:59Z",
  "status": {
   "publication": "ok (75)",
   "software": "ok (22)",
@@ -28,11 +28,11 @@
    "members": [
     "Scott Jeffers"
    ],
-   "title": "saturday-swmm Saturday-SWMM 1.2.1",
+   "title": "saturday-swmm Saturday-SWMM 1.3.1",
    "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
    "where": "GitHub release",
    "date": "2026-11-19",
-   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.2.1"
+   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.3.1"
   },
   {
    "type": "software",
