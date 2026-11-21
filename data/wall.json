@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:59Z",
+ "updated": "2026-11-21T12:43Z",
  "status": {
   "publication": "ok (75)",
   "software": "ok (22)",
@@ -28,11 +28,11 @@
    "members": [
     "Scott Jeffers"
    ],
-   "title": "saturday-swmm Saturday-SWMM 1.3.1",
+   "title": "saturday-swmm Saturday-SWMM 0.26.0",
    "summary": "Free web app for SWMM storm sewer models. Run OpenSWMM 6 or EPA SWMM 5 on your own computer.",
    "where": "GitHub release",
-   "date": "2026-11-19",
-   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v1.3.1"
+   "date": "2026-11-21",
+   "url": "https://github.com/scott-jeffers/saturday-swmm/releases/tag/v0.26.0"
   },
   {
    "type": "software",
@@ -90,12 +90,12 @@
   {
    "type": "publication",
    "members": [
-    "Bridget Wadzuk"
+    "Arash Massoudieh"
    ],
-   "title": "Satellite-based condition assessment of urban green stormwater infrastructure using a hybrid machine learning framework",
-   "where": "Scientific Reports",
-   "date": "2026-09-22",
-   "url": "https://doi.org/10.1038/s41598-026-67716-2"
+   "title": "Lessons Learned from a Pilot-Scale inDENSE Application: Improving High-Rate Contact-Stabilization Performance and Capacity",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-09-30",
+   "url": "https://doi.org/10.2175/193864718825160296"
   },
   {
    "type": "publication",
@@ -104,7 +104,7 @@
    ],
    "title": "Decoupling Carbon and Phosphorus Release During Primary Sludge Fermentation in Chem-P Plants",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-09-17",
+   "date": "2026-09-29",
    "url": "https://doi.org/10.2175/193864718825160309"
   },
   {
@@ -114,18 +114,18 @@
    ],
    "title": "Impact of Primary Sludge Dilution on Fermentation Hydrolysis Rate and Odor Mitigation",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-09-17",
+   "date": "2026-09-29",
    "url": "https://doi.org/10.2175/193864718825160455"
   },
   {
    "type": "publication",
    "members": [
-    "Arash Massoudieh"
+    "Bridget Wadzuk"
    ],
-   "title": "Lessons Learned from a Pilot-Scale inDENSE Application: Improving High-Rate Contact-Stabilization Performance and Capacity",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-09-17",
-   "url": "https://doi.org/10.2175/193864718825160296"
+   "title": "Satellite-based condition assessment of urban green stormwater infrastructure using a hybrid machine learning framework",
+   "where": "Scientific Reports",
+   "date": "2026-09-22",
+   "url": "https://doi.org/10.1038/s41598-026-67716-2"
   },
   {
    "type": "publication",
@@ -227,7 +227,7 @@
    ],
    "title": "Real Time Controls of Stormwater Facilities in Oregon: Lessons Learned from 10 years of Operation",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-07-07",
+   "date": "2026-07-10",
    "url": "https://doi.org/10.2175/193864718825160268"
   },
   {
@@ -327,7 +327,7 @@
    ],
    "title": "Acquirium: Toward Interoperable Data Driven Applications in Water Treatment Systems",
    "where": "ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation",
-   "date": "2026-06-19",
+   "date": "2026-06-22",
    "url": "https://doi.org/10.1145/3744256.3812557"
   },
   {
@@ -458,6 +458,16 @@
    "url": "https://doi.org/10.1021/acs.est.5c18706"
   },
   {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Primary Sludge Fermentation in Chem-P Plants: Decoupling P-Release from C-Release",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-05-13",
+   "url": "https://doi.org/10.2175/193864718825160232"
+  },
+  {
    "type": "software",
    "members": [
     "Robert Dickinson"
@@ -502,6 +512,16 @@
    "url": "https://github.com/dickinsonre/SwmmHistory"
   },
   {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Lessons Learned from a Pilot-Scale High-Rate Contact Stabilization System with inDENSE Application: Coupling Biological and Physical Selection to Improve Performance and Capacity",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2026-05-12",
+   "url": "https://doi.org/10.2175/193864718825160236"
+  },
+  {
    "type": "software",
    "members": [
     "Robert Dickinson"
@@ -531,26 +551,6 @@
    "where": "Journal of Hydraulic Engineering",
    "date": "2026-05-08",
    "url": "https://doi.org/10.1061/jhend8.hyeng-14532"
-  },
-  {
-   "type": "publication",
-   "members": [
-    "Arash Massoudieh"
-   ],
-   "title": "Lessons Learned from a Pilot-Scale High-Rate Contact Stabilization System with inDENSE Application: Coupling Biological and Physical Selection to Improve Performance and Capacity",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-05-08",
-   "url": "https://doi.org/10.2175/193864718825160236"
-  },
-  {
-   "type": "publication",
-   "members": [
-    "Arash Massoudieh"
-   ],
-   "title": "Primary Sludge Fermentation in Chem-P Plants: Decoupling P-Release from C-Release",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2026-05-08",
-   "url": "https://doi.org/10.2175/193864718825160232"
   },
   {
    "type": "publication",
@@ -862,6 +862,36 @@
   {
    "type": "publication",
    "members": [
+    "Angela Brackbill"
+   ],
+   "title": "The Long's Park Treatment Wetlands and Park Enhancement Project",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-10-01",
+   "url": "https://doi.org/10.2175/193864718825159966"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Investigating Fermentation of Primary Sludge in Full-Scale Gravity Thickeners",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-10-01",
+   "url": "https://doi.org/10.2175/193864718825160025"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Arash Massoudieh"
+   ],
+   "title": "Improving Settleability and Clarifier Capacity for High-rate Contact-stabilization Systems Through inDENSE Application",
+   "where": "Proceedings of the Water Environment Federation",
+   "date": "2025-10-01",
+   "url": "https://doi.org/10.2175/193864718825160088"
+  },
+  {
+   "type": "publication",
+   "members": [
     "David Sample"
    ],
    "title": "Quantitative Assessment of Environmental Site Design vs. Traditional Storage‐Based Stormwater Management: Impacts on Catchment Hydrology of Minebank Run, Baltimore, MD",
@@ -872,31 +902,11 @@
   {
    "type": "publication",
    "members": [
-    "Angela Brackbill"
-   ],
-   "title": "The Long's Park Treatment Wetlands and Park Enhancement Project",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
-   "url": "https://doi.org/10.2175/193864718825159966"
-  },
-  {
-   "type": "publication",
-   "members": [
-    "Arash Massoudieh"
-   ],
-   "title": "Investigating Fermentation of Primary Sludge in Full-Scale Gravity Thickeners",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
-   "url": "https://doi.org/10.2175/193864718825160025"
-  },
-  {
-   "type": "publication",
-   "members": [
     "Arash Massoudieh"
    ],
    "title": "Enhancing polymer efficiency through use of diluted polymer for final dewatering",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
+   "date": "2025-09-30",
    "url": "https://doi.org/10.2175/193864718825159968"
   },
   {
@@ -906,7 +916,7 @@
    ],
    "title": "CSO Post-Construction Monitoring: Four Watersheds, Forty-Four CSOs, Seventeen Miles of Tunnel, a Storage Tank, and Successful Achievement of Performance Criteria",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
+   "date": "2025-09-29",
    "url": "https://doi.org/10.2175/193864718825159985"
   },
   {
@@ -916,18 +926,8 @@
    ],
    "title": "Using video analysis to better understand Settleability in High-Rate Activated Sludge Systems",
    "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
+   "date": "2025-09-29",
    "url": "https://doi.org/10.2175/193864718825160026"
-  },
-  {
-   "type": "publication",
-   "members": [
-    "Arash Massoudieh"
-   ],
-   "title": "Improving Settleability and Clarifier Capacity for High-rate Contact-stabilization Systems Through inDENSE Application",
-   "where": "Proceedings of the Water Environment Federation",
-   "date": "2025-09-16",
-   "url": "https://doi.org/10.2175/193864718825160088"
   },
   {
    "type": "publication",
