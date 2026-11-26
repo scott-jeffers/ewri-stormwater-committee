@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T14:55Z",
+ "updated": "2026-11-26T13:57Z",
  "status": {
-  "publication": "ok (75)",
-  "software": "ok (22)",
+  "publication": "ok (77)",
+  "software": "ok (23)",
   "video": "ok (6)"
  },
  "photos": {
@@ -26,6 +26,17 @@
   {
    "type": "software",
    "members": [
+    "Robert Dickinson"
+   ],
+   "title": "New open-source project: swmm5-xsect-lean",
+   "summary": "EPA SWMM 5.2.4 cross-section geometry checked in Lean 4: 78 kernel-checked theorems, 3 engine defects reproduced",
+   "where": "GitHub",
+   "date": "2026-11-25",
+   "url": "https://github.com/dickinsonre/swmm5-xsect-lean"
+  },
+  {
+   "type": "software",
+   "members": [
     "Scott Jeffers"
    ],
    "title": "saturday-swmm Saturday-SWMM 0.57.1",
@@ -44,6 +55,16 @@
    "where": "GitHub",
    "date": "2026-11-14",
    "url": "https://github.com/dickinsonre/swmm-second-brain"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Bridget Wadzuk"
+   ],
+   "title": "Environmental Microbiology and Nanotechnology in Action: 2026 Benjamin Franklin Medal in Civil Engineering presented to Pedro J.J. Alvarez, Ph.D., AAA&S, NA",
+   "where": "Journal of the Franklin Institute",
+   "date": "2026-11-01",
+   "url": "https://doi.org/10.1016/j.jfranklin.2026.109285"
   },
   {
    "type": "software",
@@ -665,6 +686,16 @@
    "where": "Discover Applied Sciences",
    "date": "2026-03-05",
    "url": "https://doi.org/10.1007/s42452-026-08488-2"
+  },
+  {
+   "type": "publication",
+   "members": [
+    "Scott Struck"
+   ],
+   "title": "Assessing aquifer recharge with 4D resistivity tomography at urban SCMs",
+   "where": "The Leading Edge",
+   "date": "2026-03-01",
+   "url": "https://doi.org/10.1190/tle-2025-1053"
   },
   {
    "type": "publication",
