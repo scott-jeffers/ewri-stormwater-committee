@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-26T13:57Z",
+ "updated": "2026-11-27T13:56Z",
  "status": {
-  "publication": "ok (77)",
+  "publication": "ok (78)",
   "software": "ok (23)",
   "video": "ok (6)"
  },
@@ -23,6 +23,16 @@
   "Robert Traver": "assets/img/members/traver.jpg"
  },
  "items": [
+  {
+   "type": "publication",
+   "members": [
+    "Elizabeth Fassman-Beck"
+   ],
+   "title": "Quantifying Water Balance Error in Bioretention Monitoring",
+   "where": "Journal of Sustainable Water in the Built Environment",
+   "date": "2026-11-26",
+   "url": "https://doi.org/10.1061/jswbay.sweng-769"
+  },
   {
    "type": "software",
    "members": [
